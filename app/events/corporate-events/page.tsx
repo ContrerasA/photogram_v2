@@ -1,7 +1,8 @@
-import VideoHero from '@/components/Global/VideoHero'
 import React from 'react'
 
-import { GiBigDiamondRing } from 'react-icons/gi'
+import VideoHero from '@/components/Global/VideoHero'
+
+import { GiBriefcase } from 'react-icons/gi'
 import { AiFillCamera } from 'react-icons/ai'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
@@ -9,32 +10,38 @@ import BoothPackages from '@/components/home/BoothPackages'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 
-const weddings = () => {
+const CorporateEvents = () => {
 	return (
 		<div>
 			<VideoHero
 				path="/videos/Promo03.mp4"
-				heading="The Perfect Compliment to your Perfect Wedding"
+				heading="The Perfect Addition To Your Perfect Party"
 				subtitle=""
 			/>
 			<div className=' flex justify-center mx-20'>
 				<div className='flex text-center mt-20 justify-between space-x-48'>
 					<div className='w-1/2'>
 						<div className='flex flex-col items-center'>
-							<GiBigDiamondRing size={56} className='mb-5' />
-							<p className={`${scriptFont.className} text-6xl`}>Your Wedding</p>
-							<p>For your special day, trust Photogram Booth to create unforgettable wedding memories. With our expert team and top-of-the-line equipment, we offer a seamless and personalized experience, capturing the joy and love shared by you and your guests in stunning, high-quality photographs that will be treasured for a lifetime.</p>
+							<GiBriefcase size={56} className='mb-5' />
+							<p className={`${scriptFont.className} text-6xl`}>
+								Your Party!
+							</p>
+							<p>
+							Take your corporate party to the next level with the Photogram Booth experience! Our sleek and professional booth adds a touch of excitement, allowing colleagues to bond and capture fun memories together. With high-quality prints and a seamless experience, Photogram Booth is a must-have addition for corporate events that want to create a vibrant and engaging atmosphere.
+							</p>
 						</div>
 					</div>
 					<div className='w-1/2'>
 						<div className='flex flex-col items-center'>
 							<AiFillCamera size={56} className='mb-5' />
-							<p className={`${scriptFont.className} text-6xl`}>Our Booths</p>
+							<p className={`${scriptFont.className} text-6xl`}>
+								Our Booths
+							</p>
 							<p>
-								Elevate your wedding day with our range of booth options, each offering its own unique charm. The digital booth brings a modern twist, allowing guests to instantly share their captured moments on social media, while the classic photo print booth provides nostalgic, tangible prints that can be cherished for years to come. For a touch of elegance and interactive fun, our mirror booth adds a captivating element, engaging guests with interactive animations and personalized messages, making it a truly unforgettable addition to your wedding celebration.</p>
+							Add a touch of distinction to your corporate event with our range of booth options. The digital booth lets guests instantly share moments on social media, the classic photo print booth provides timeless prints, and the mirror booth offers interactive animations and personalized messages. Elevate your corporate celebration with Photogram Booth for an unforgettable experience.
+							</p>
 						</div>
 					</div>
-
 				</div>
 			</div>
 
@@ -49,10 +56,6 @@ const weddings = () => {
 				</div>
 				<img src="/images/promoImages/eventsPromo.jpg" alt="" className='w-screen ' />
 				<div className="overlay" />
-				<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-xl w-3/4'>
-					<p className='text-white mb-3'>We are so glad we chose the premium photo booth from Photogram Booth for our wedding! The booth looked elegant and fit seamlessly with our wedding theme. Our guests had a blast taking fun photos with the props and personalized filters, and the prints turned out beautifully. The attendant was friendly and helpful, ensuring everything ran smoothly. Having the photo booth was a fantastic addition to our wedding, and we now have a collection of hilarious and heartfelt moments captured in the prints. Highly recommended for anyone looking to add an extra element of joy and entertainment to their special day!</p>
-					<p className={`${scriptFont.className} text-3xl mb-5 text-white text-right`}>- Emily Thompson</p>
-				</div>
 			</div>
 
 			{/* Features */}
@@ -65,8 +68,8 @@ const weddings = () => {
 						<p>• Custom Photo Templates</p>
 					</div>
 					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/weddingProps.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Wedding Props</p>
+						<img src="/images/promoImages/groupPhoto02.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
+						<p>• Party Props</p>
 					</div>
 					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
 						<img src="/images/backdrops/whitefloral_osrnmc.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
@@ -120,7 +123,7 @@ const weddings = () => {
 						<p>• Custom Props & Signs</p>
 					</div>
 					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/floralBackdrop.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
+						<img src="/images/backdrops/grassBackdrop.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
 						<p>• Premium Backdrops</p>
 					</div>
 				</div>
@@ -135,4 +138,4 @@ const weddings = () => {
 	)
 }
 
-export default weddings
+export default CorporateEvents

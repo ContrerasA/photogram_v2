@@ -40,8 +40,8 @@ const Navbar = () => {
 						</details>
 					</li>
 					<li><Link href="/events/weddings">Weddings</Link></li>
-					<li><a>Parties</a></li>
-					<li><a>Corporate Events</a></li>
+					<li><Link href="/events/parties">Parties</Link></li>
+					<li><Link href="/events/corporate-events">Corporate Events</Link></li>
 					<li><a>Gallery</a></li>
 					<li><a>Photo Templates</a></li>
 					<li><a>Backdrops</a></li>
