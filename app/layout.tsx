@@ -1,7 +1,9 @@
+import Navbar from '@/components/Global/Navbar'
 import './globals.css'
 import { Inter, Nothing_You_Could_Do } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const nycd = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 export const metadata = {
 	title: 'Create Next App',
@@ -15,8 +17,10 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en" data-theme='light'>
-			
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<Navbar />
+				{children}
+			</body>
 		</html>
 	)
 }
