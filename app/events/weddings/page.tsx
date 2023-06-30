@@ -128,9 +128,6 @@ const weddings = () => {
 
 			<BoothPackages />
 
-			<div className="h-screen ">
-
-			</div>
 		</div>
 	)
 }

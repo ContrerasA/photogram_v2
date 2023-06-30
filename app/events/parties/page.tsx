@@ -138,9 +138,6 @@ const Parties = () => {
 
 			<BoothPackages />
 
-			<div className="h-screen ">
-
-			</div>
 		</div>
 	)
 }

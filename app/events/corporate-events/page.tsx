@@ -6,8 +6,9 @@ import { GiBriefcase } from 'react-icons/gi'
 import { AiFillCamera } from 'react-icons/ai'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
-import BoothPackages from '@/components/home/BoothPackages'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
+
+import BoothPackages from '@/components/home/BoothPackages'
 
 
 const CorporateEvents = () => {
@@ -130,10 +131,6 @@ const CorporateEvents = () => {
 			</div>
 
 			<BoothPackages />
-
-			<div className="h-screen ">
-
-			</div>
 		</div>
 	)
 }
