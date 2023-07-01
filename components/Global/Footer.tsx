@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { scriptFont } from '@/src/Utils/FontUtils';
+import Link from 'next/link';
 
 const Footer = () => {
 	return (
@@ -15,16 +16,16 @@ const Footer = () => {
 				</div>
 
 
-				<div className='w-1/6 text-center'>
+				<div className='w-1/6 text-center flex flex-col'>
 					<p className={`${scriptFont.className} text-2xl mb-2`}>Services</p>
 					<hr className='mb-2' />
 					<p>Digital Booth</p>
 					<p>Premium Photo Booth</p>
 					<p>Magic Mirror Booth</p>
 					<br />
-					<p>Weddings</p>
-					<p>Parties</p>
-					<p>Corporate Events</p>
+					<Link href={"/events/weddings"}>Weddings</Link>
+					<Link href={"/events/parties"}>Parties</Link>
+					<Link href={"/events/corporate-events"}>Corporate Events</Link>
 				</div>
 
 				<div className='w-1/6 text-center'>

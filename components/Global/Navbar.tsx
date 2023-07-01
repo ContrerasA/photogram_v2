@@ -42,11 +42,11 @@ const Navbar = () => {
 					<li><Link href="/events/weddings">Weddings</Link></li>
 					<li><Link href="/events/parties">Parties</Link></li>
 					<li><Link href="/events/corporate-events">Corporate Events</Link></li>
-					<li><a>Gallery</a></li>
-					<li><a>Photo Templates</a></li>
-					<li><a>Backdrops</a></li>
-					<li><a>About</a></li>
-					<li><a>Contac Us</a></li>
+					<li><Link href="/gallery">Gallery</Link></li>
+					<li><Link href="/photo-templates">Photo Templates</Link></li>
+					<li><Link href="/backdrops">Backdrops</Link></li>
+					<li><Link href="/about">About</Link></li>
+					<li><Link href="/about#contact">Contact Us</Link></li>
 				</ul>
 			</div>
 			<div className="navbar-end  lg:visible">

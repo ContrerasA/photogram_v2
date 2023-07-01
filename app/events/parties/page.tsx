@@ -14,7 +14,7 @@ const Parties = () => {
 	return (
 		<div>
 			<VideoHero
-				path="/videos/Promo03.mp4"
+				path="/videos/Promo02.mp4"
 				heading="The Perfect Addition To Your Perfect Party"
 				subtitle=""
 			/>

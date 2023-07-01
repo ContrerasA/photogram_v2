@@ -21,9 +21,6 @@ export default function Home() {
 			<Events />
 			<ServiceLocations />
 
-			{/* space */}
-			<div className="h-screen bg-gray-300">
-			</div>
 		</main>
 	)
 }

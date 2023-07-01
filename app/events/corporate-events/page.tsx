@@ -15,8 +15,8 @@ const CorporateEvents = () => {
 	return (
 		<div>
 			<VideoHero
-				path="/videos/Promo03.mp4"
-				heading="The Perfect Addition To Your Perfect Party"
+				path="/videos/Promo04.mp4"
+				heading="An Excellent Addition To Your Corporate Party"
 				subtitle=""
 			/>
 			<div className=' flex justify-center mx-20'>

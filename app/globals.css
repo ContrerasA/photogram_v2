@@ -5,3 +5,11 @@
 .overlay{
 	@apply absolute bg-gray-900 bg-opacity-50 top-0 right-0 bottom-0 left-0
 }
+
+.input-field{
+	@apply shadow-lg border border-black border-opacity-20  leading-tight focus:outline-none focus:ring-2 ring-blue-500 ring-opacity-50 rounded-sm py-2 px-3 w-full;
+}
+
+.label {
+	@apply block text-gray-700 text-sm font-normal mb-2;
+}
