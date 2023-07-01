@@ -1,6 +1,39 @@
-import React from 'react'
+'use client';
+
+import React, { Fragment, useState } from 'react'
+
+import axios from 'axios';
+import format from 'date-fns/format';
+import { useForm } from 'react-hook-form'
+import { Transition } from '@headlessui/react';
+import Link from 'next/link';
+
+import {FaCheck} from 'react-icons/fa'
+
+type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
 
 const ContactForm = () => {
+	const [contactState, setContactState] = useState<ContactState>('incomplete');
+
+	const { register, handleSubmit, watch, formState } = useForm({
+		defaultValues: {
+			name: process.env.NODE_ENV !== 'production' ? 'Anthony C' : '',
+			email: process.env.NODE_ENV !== 'production' ? 'test' : '',
+			message: process.env.NODE_ENV !== 'production' ? 'I was wondering...' : '',
+		}
+	});
+
+	const onSubmit = async (data: any) => {
+		setContactState('submitting');
+		data.date = format(new Date(), 'MMMM d, yyy @ h:m:aaa')
+		// let res = await axios.post(`api/contact`, data)
+		console.log(data)
+
+		setTimeout(() => {
+			setContactState('complete');
+		}, 2000);
+	}
+
 	return (
 		<div>
 			<p className="text-3xl text-center">Have Further Questions?</p>
@@ -11,14 +44,14 @@ const ContactForm = () => {
 
 			<div className="flex items-center justify-center relative my-10">
 				<div className="w-full max-w-2xl">
-					<form>
+					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="mb-4">
 							<label htmlFor="name" className='label'>Name</label>
-							<input type="text" name='name' className='input-field'/>
+							<input type="text" name='name' className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="email" className='label'>Email</label>
-							<input type="email" name='email' className='input-field'/>
+							<input type="email" name='email' className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="message" className='label'>Message</label>
@@ -29,6 +62,24 @@ const ContactForm = () => {
 						</div>
 					</form>
 				</div>
+
+				{contactState === 'submitting' && (
+
+					<div className="flex flex-col justify-center items-center absolute top-0 left-0 h-full w-full bg-white bg-opacity-90">
+						<div className="animate-spin rounded-full h-32 w-32 border-b-2 border-gray-900">
+						</div>
+						<p className="mt-10 text-xl text-accent font-bold">SUBMITTING...</p>
+					</div>
+				)}
+
+				{contactState === 'complete' && (
+					<div className="flex flex-col justify-center items-center absolute top-0 left-0 h-full w-full bg-white bg-opacity-90">
+						<FaCheck className="h-32 w-32 text-green-300" />
+						<p className="mt-10 text-xl text-accent font-bold">REQUEST SENT</p>
+						<p className="text-lg">We'll get back to you as soon as we can</p>
+						<Link href="/"><button className="btn btn-primary mt-5">RETURN HOME</button></Link>
+					</div>
+				)}
 			</div>
 		</div>
 	)
