@@ -2,7 +2,7 @@ import Navbar from "@/components/global/Navbar";
 
 import ServiceLocations from "@/components/home/ServiceLocations";
 import Events from "@/components/home/Events";
-import BoothPackages from "@/components/home/BoothPackages";
+import BoothServices from "@/components/home/BoothServices";
 import VideoHero from "@/components/global/VideoHero";
 import ServicesDescription from "@/components/home/ServicesDescription";
 import RequestQuote from "@/components/global/RequestQuote";
@@ -19,7 +19,7 @@ export default function Home() {
 				button={{text: 'Photo Booth Packages', path: '#booth-packages'}}
 			/>
 			<ServicesDescription />
-			<BoothPackages />
+			<BoothServices />
 			<Events />
 			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
 			<ServiceLocations />

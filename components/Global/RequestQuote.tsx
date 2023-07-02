@@ -15,9 +15,9 @@ const RequestQuote = (props: PropTypes) => {
 			<h1 className={`${scriptFont.className} text-5xl my-5`}>Instant Quote</h1>
 			<p className=''>We offer fast, easy, and instant quotes.</p>
 			<p className='text-sm'>If you'd like to learn more, fill out the information below to receive an instant quote via email.</p>
-			<div className="flex justify-center space-x-20 mt-10 items-center">
-				<img src={props.imagePath} alt="" className='shadow-lg h-[500px] w-[375px] object-cover rounded-[2.5rem]' />
-				<form action="" className=''>
+			<div className="flex flex-col lg:flex-row justify-center lg:space-x-20 mt-10 items-center w-full">
+				<img src={props.imagePath} alt="" className='shadow-lg hidden lg:block h-[500px] w-[375px] object-cover lg:rounded-[2.5rem] ' />
+				<form action="" className='w-full max-w-[90vw] lg:w-1/3 '>
 					<div className="mb-4">
 						<label htmlFor="name" className='label'>Name</label>
 						<input type="text" id='name' name='name' className='input-field' />

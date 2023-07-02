@@ -16,7 +16,7 @@ const ServicesDescription = () => {
 				<AiFillStar />
 				<AiFillStar />
 			</div>
-			<div className="text-center my-5 max-w-[66vw]">
+			<div className="text-center my-5 max-w-[90vw] lg:max-w-[66vw]">
 				<p className={`${scriptFont.className} text-5xl mb-5`}>
 					Picture Perfect Photo Booth Packages
 				</p>

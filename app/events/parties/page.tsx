@@ -6,7 +6,7 @@ import { GiPartyPopper } from 'react-icons/gi'
 import { AiFillCamera } from 'react-icons/ai'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
-import BoothPackages from '@/components/home/BoothPackages'
+import BoothServices from '@/components/home/BoothServices'
 import RequestQuote from '@/components/global/RequestQuote'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
@@ -139,7 +139,7 @@ const Parties = () => {
 			</div>
 
 			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
-			<BoothPackages />
+			<BoothServices />
 
 		</div>
 	)

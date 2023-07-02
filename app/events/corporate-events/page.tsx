@@ -8,7 +8,7 @@ import { AiFillCamera } from 'react-icons/ai'
 import { Nothing_You_Could_Do } from 'next/font/google'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
-import BoothPackages from '@/components/home/BoothPackages'
+import BoothServices from '@/components/home/BoothServices'
 import RequestQuote from '@/components/global/RequestQuote'
 
 
@@ -132,7 +132,7 @@ const CorporateEvents = () => {
 				</div>
 			</div>
 
-			<BoothPackages />
+			<BoothServices />
 			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
 
 		</div>

@@ -5,7 +5,7 @@ import { GiBigDiamondRing } from 'react-icons/gi'
 import { AiFillCamera } from 'react-icons/ai'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
-import BoothPackages from '@/components/home/BoothPackages'
+import BoothServices from '@/components/home/BoothServices'
 import BoothFeatures from '@/components/booths/boothFeatures'
 import RequestQuote from '@/components/global/RequestQuote'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
@@ -62,7 +62,7 @@ const weddings = () => {
 			<BoothFeatures booth='premiumBooth'/>			
 
 			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
-			<BoothPackages />
+			<BoothServices />
 
 		</div>
 	)

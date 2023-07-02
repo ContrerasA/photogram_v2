@@ -4,20 +4,20 @@ import { Nothing_You_Could_Do } from 'next/font/google'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 
-const BoothPackages = () => {
+const BoothServices = () => {
 	return (
-		<section id="booth-packages" className="mt-20">
+		<section id="booth-packages" className="m-auto mt-20 max-w-[90vw] ">
 			<p className={`${scriptFont.className} text-5xl mb-5 text-center`}>
 				Our Booth Services
 			</p>
-			<p className="text-sm text-center">
+			<p className="text-center">
 				Take a look at our services below. We're also able to cater to custom requests. Just shoot us a message, and we'll see what we can do!
 			</p>
 
-			<div className="flex justify-center space-x-10 mb-10 mt-5 mx-20">
+			<div className="flex flex-col lg:flex-row items-center justify-center space-x-10 mb-10 mt-5 mx-20">
 
 
-				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 mt-10">
+				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 lg:mt-10">
 					<div className="h-[571px] w-[428px] rounded-[2.5rem]  relative overflow-hidden ">
 						<div className="overlay" />
 						<img src="/images/eventImages/selfieBooth01.jpg" alt="" className="w-full h-full object-cover" />
@@ -55,7 +55,7 @@ const BoothPackages = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 mt-10">
+				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 lg:mt-10">
 					<div className="h-[571px] w-[428px] rounded-[2.5rem] relative overflow-hidden ">
 						<div className="overlay" />
 						<img src="/images/eventImages/mirrorBooth01.png" alt="" className="w-full h-full object-cover" />
@@ -81,4 +81,4 @@ const BoothPackages = () => {
 	)
 }
 
-export default BoothPackages
+export default BoothServices
