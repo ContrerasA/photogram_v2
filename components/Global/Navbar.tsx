@@ -5,12 +5,16 @@ import React, { useEffect, useRef, useState } from 'react'
 const Navbar = () => {
 
 	function mouseDownHandler(e) {
-		const el = document.querySelector('details');
-		if (el?.hasAttribute('open')) {
-			setTimeout(() => {
-				el.removeAttribute('open')
-			}, 250);
-		}
+		const foundDropdowns = document.querySelectorAll('details');
+
+		foundDropdowns.forEach(el => {
+			if (el?.hasAttribute('open')) {
+				setTimeout(() => {
+					el.removeAttribute('open')
+				}, 250);
+			}
+		})
+
 	}
 
 	useEffect(() => {
