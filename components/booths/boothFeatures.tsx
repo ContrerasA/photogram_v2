@@ -29,14 +29,14 @@ const BoothFeatures = (props: PropsType) => {
 					{includedFeatures.map((el, index) => (
 						<div key={index} className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
 							<img src={el.imagePath} alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-							<p>• {el.description}</p>
+							<p className=''><span className='text-primary'>•</span> {el.description} <span className='text-primary'>•</span></p>
 						</div>
 					))}
 				</div>
 			</div>
 
 			<div className='flex flex-col items-center mt-20'>
-				<p className={`${scriptFont.className} text-6xl mb-5`}>Additional Optional Features</p>
+				<p className={`${scriptFont.className} text-6xl mb-5 text-center`}>Additional Optional Features</p>
 				{props.optionalFeaturesDescription ?
 					<p>{props.optionalFeaturesDescription}</p>
 					:
@@ -47,7 +47,7 @@ const BoothFeatures = (props: PropsType) => {
 					{OptionalFeatures.map((el, index) => (
 						<div key={index} className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
 							<img src={el.imagePath} alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-							<p>• {el.description}</p>
+							<p className=''><span className='text-primary'>•</span> {el.description} <span className='text-primary'>•</span></p>
 						</div>
 					))}
 				</div>

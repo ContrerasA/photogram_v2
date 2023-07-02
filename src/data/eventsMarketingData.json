@@ -1,0 +1,94 @@
+[
+	{
+		"id": 1,
+		"path": "weddings",
+		"name": "Weddings",
+		"requestQuoteImagePath": "/images/eventImages/premiumBooth01.jpg",
+		"reviewImagePath" : "/images/promoImages/eventsPromo.jpg",
+		"videoHero": {
+			"heading": "The Perfect Compliment to your Perfect Wedding",
+			"subtitle": "",
+			"path": "/videos/Promo03.mp4",
+			"button": {
+				"text": "Photo Booth Packages",
+				"path": "#booth-packages"
+			}
+		},
+		"about": [
+			{
+				"title": "Your Wedding",
+				"description": "For your special day, trust Photogram Booth to create unforgettable wedding memories. With our expert team and top-of-the-line equipment, we offer a seamless and personalized experience, capturing the joy and love shared by you and your guests in stunning, high-quality photographs that will be treasured for a lifetime.",
+				"iconPath": "/images/icons/ring-01.png"
+			},
+			{
+				"title": "Our Booths",
+				"description": "Elevate your wedding day with our range of booth options, each offering its own unique charm. The digital booth brings a modern twist, allowing guests to instantly share their captured moments on social media, while the classic photo print booth provides nostalgic, tangible prints that can be cherished for years to come. For a touch of elegance and interactive fun, our mirror booth adds a captivating element, engaging guests with interactive animations and personalized messages, making it a truly unforgettable addition to your wedding celebration.",
+				"iconPath": "/images/icons/camera-01.png"
+			}
+		],
+		"review": {
+			"name": "Emily Thompson",
+			"review": "We are so glad we chose the premium photo booth from Photogram Booth for our wedding! The booth looked elegant and fit seamlessly with our wedding theme. Our guests had a blast taking fun photos with the props and personalized filters, and the prints turned out beautifully. The attendant was friendly and helpful, ensuring everything ran smoothly. Having the photo booth was a fantastic addition to our wedding, and we now have a collection of hilarious and heartfelt moments captured in the prints. Highly recommended for anyone looking to add an extra element of joy and entertainment to their special day!"
+		}
+	},
+	{
+		"id": 2,
+		"path": "parties",
+		"name": "Parties",
+		"requestQuoteImagePath": "/images/eventImages/premiumBooth01.jpg",
+		"reviewImagePath" : "/images/promoImages/eventsPromo.jpg",
+		"videoHero": {
+			"heading": "The Perfect Addition To Your Perfect Party",
+			"subtitle": "Unforgettable Moments with our Digital Photo Booth",
+			"path": "/videos/Promo02.mp4",
+			"button": {
+				"text": "Photo Booth Packages",
+				"path": "#booth-packages"
+			}
+		},
+		"about": [
+			{
+				"title": "Your Party!",
+				"description": "For your special celebration, entrust Photogram Booth to craft unforgettable memories. With our experienced team and state-of-the-art equipment, we provide a seamless and personalized experience, capturing the joy and laughter shared by you and your guests in stunning, high-quality photographs that will be cherished for years to come. Whether it's a festive party or a holiday gathering, Photogram Booth ensures that every moment is preserved with perfection and fondly remembered for a lifetime.",
+				"iconPath": "/images/icons/party-01.png"
+			},
+			{
+				"title": "Our Booths",
+				"description": "Elevate your special occasion with our diverse range of booth options, each presenting its own distinct charm. The digital booth adds a modern twist, enabling guests to instantly share their captured moments on social media, while the classic photo print booth offers timeless, physical prints that can be cherished for years to come. For a touch of elegance and interactive fun, our mirror booth introduces a captivating element, engaging guests with interactive animations and personalized messages, ensuring an unforgettable addition to your party or holiday celebration.",
+				"iconPath": "/images/icons/camera-01.png"
+			}
+		],
+		"review": {
+			"name": "- David Cohen",
+			"review": "Our bar mitzvah was made even more memorable with the Photogram Booth experience! The booth looked fantastic, and our guests had a blast capturing fun-filled moments together. The high-quality prints serve as cherished mementos, ensuring that the joy and excitement of our celebration will be remembered for years to come. "
+		}
+	},
+	{
+		"id": 3,
+		"path": "corporate-events",
+		"name": "Corporate events",
+		"requestQuoteImagePath": "/images/eventImages/premiumBooth01.jpg",
+		"reviewImagePath" : "/images/promoImages/eventsPromo.jpg",
+		"videoHero": {
+			"heading": "An Excellent Addition To Your Corporate Party",
+			"subtitle": "Unforgettable Moments with our Digital Photo Booth",
+			"path": "/videos/Promo04.mp4",
+			"button": {
+				"text": "Photo Booth Packages",
+				"path": "#booth-packages"
+			}
+		},
+		"about": [
+			{
+				"title": "Your Party!",
+				"description": "Take your corporate party to the next level with the Photogram Booth experience! Our sleek and professional booth adds a touch of excitement, allowing colleagues to bond and capture fun memories together. With high-quality prints and a seamless experience, Photogram Booth is a must-have addition for corporate events that want to create a vibrant and engaging atmosphere.",
+				"iconPath": "/images/icons/briefcase-01.png"
+			},
+			{
+				"title": "Our Booths",
+				"description": "Add a touch of distinction to your corporate event with our range of booth options. The digital booth lets guests instantly share moments on social media, the classic photo print booth provides timeless prints, and the mirror booth offers interactive animations and personalized messages. Elevate your corporate celebration with Photogram Booth for an unforgettable experience.",
+				"iconPath": "/images/icons/camera-01.png"
+			}
+		]
+	}
+]

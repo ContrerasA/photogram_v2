@@ -44,23 +44,16 @@ const Page = async ({ params }) => {
 				subtitle={data.videoHero.subtitle}
 				path={data.videoHero.path}
 			/>
-			<div className='flex mt-20 justify-center items-center space-x-20 w-[66vw] h-[33vh] m-auto'>
-				<img src="/images/eventImages/digitalbooth03.jpg" alt="" className='rounded-[2.5rem] w-1/2 object-cover max-h-full' />
-				<div>
-					<p className={`${scriptFont.className} text-4xl`}>{data.name}</p>
-					<p>{data.description}</p>
-				</div>
 
-			</div>
-			<div>
-
+			<div className="flex flex-col mt-10 w-full items-center">
 				{data.marketingInfo.map((el, index) => (
-					<div className='flex even:flex-row-reverse mt-20 justify-center items-center w-[66vw] h-[33vh] m-auto'>
-						<div className='mx-10'>
-							<p className={`${scriptFont.className} text-4xl`}>{el.title}</p>
-							<p className='w-2/3'>{el.description}</p>
+					<div className='  lg:w-2/3 flex flex-col even:lg:flex-row lg:flex-row-reverse mt-10 justify-center items-center'>
+						<div className="flex flex-col w-3/4 mx-20">
+							<p className={`${scriptFont.className} text-4xl text-center`}>{el.title}</p>
+							<p className=''>{el.description}</p>
 						</div>
-						<img src={el.imagePath} alt="" className='rounded-[2.5rem] w-1/2 object-cover max-h-full' />
+						<img src={el.imagePath} alt="" className='lg:rounded-[2.5rem] object-cover h-[350px] w-screen lg:w-[600px] mt-5 lg:mt-0' />
+
 					</div>
 				))}
 			</div>
