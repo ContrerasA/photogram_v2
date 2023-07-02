@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
 
-	function mouseDownHandler(e) {
+	function mouseDownHandler(_e: any) {
 		const foundDropdowns = document.querySelectorAll('details');
 
 		foundDropdowns.forEach(el => {
@@ -35,7 +35,7 @@ const Navbar = () => {
 								<summary>Booth Packages</summary>
 								<ul className="p-2 z-50">
 									<li className=' z-50'>
-										<Link href="/booths/digital-booth">Digital Booth</Link>
+										<Link href="/booths/digital-photo-booth">Digital Booth</Link>
 									</li>
 									<li className=' z-50'>
 										<Link href="/booths/premium-photo-booth">Premium Photo Booth</Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
 							<summary>Booth Packages</summary>
 							<ul className="p-2 z-50">
 								<li className=' z-50'>
-									<Link href="/booths/digital-booth">Digital Booth</Link>
+									<Link href="/booths/digital-photo-booth">Digital Booth</Link>
 								</li>
 								<li className=' z-50'>
 									<Link href="/booths/premium-photo-booth">Premium Photo Booth</Link>
