@@ -1,6 +1,6 @@
 import React from 'react'
 
-import VideoHero from '@/components/Global/VideoHero'
+import VideoHero from '@/components/global/VideoHero'
 
 import { GiBriefcase } from 'react-icons/gi'
 import { AiFillCamera } from 'react-icons/ai'

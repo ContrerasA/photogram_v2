@@ -1,4 +1,4 @@
-import VideoHero from '@/components/Global/VideoHero'
+import VideoHero from '@/components/global/VideoHero'
 import React from 'react'
 
 import { GiBigDiamondRing } from 'react-icons/gi'

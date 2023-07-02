@@ -14,11 +14,11 @@ const BoothPackages = () => {
 				Take a look at our services below. We're also able to cater to custom requests. Just shoot us a message, and we'll see what we can do!
 			</p>
 
-			<div className="flex justify-center space-x-10 my-10 mx-20">
+			<div className="flex justify-center space-x-10 mb-10 mt-5 mx-20">
 
 
-				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2">
-					<div className="h-[571px] w-[428px] bg-slate-500 rounded-[2.5rem] mt-10 relative overflow-hidden ">
+				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 mt-10">
+					<div className="h-[571px] w-[428px] rounded-[2.5rem]  relative overflow-hidden ">
 						<div className="overlay" />
 						<img src="/images/eventImages/selfieBooth01.jpg" alt="" className="w-full h-full object-cover" />
 						<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">
@@ -37,7 +37,7 @@ const BoothPackages = () => {
 				</div>
 
 				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2">
-					<div className="h-[571px] w-[428px] bg-slate-500 rounded-[2.5rem] mt-10 relative overflow-hidden ">
+					<div className="h-[571px] w-[428px] rounded-[2.5rem] relative overflow-hidden ">
 						<div className="overlay" />
 						<img src="/images/eventImages/premiumBooth01.jpg" alt="" className="w-full h-full object-cover" />
 						<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">
@@ -55,8 +55,8 @@ const BoothPackages = () => {
 					</div>
 				</div>
 
-				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2">
-					<div className="h-[571px] w-[428px] bg-slate-500 rounded-[2.5rem] mt-10 relative overflow-hidden ">
+				<div className="flex flex-col shadow-lg overflow-hidden rounded-[2.5rem] m-2 mt-10">
+					<div className="h-[571px] w-[428px] rounded-[2.5rem] relative overflow-hidden ">
 						<div className="overlay" />
 						<img src="/images/eventImages/mirrorBooth01.png" alt="" className="w-full h-full object-cover" />
 						<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">

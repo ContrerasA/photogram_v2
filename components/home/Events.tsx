@@ -16,7 +16,7 @@ const Events = () => {
 	</p>
 
 	<div className="flex justify-center space-x-10 my-10 mx-20">
-		<div className="h-1/3 aspect-[3/4] bg-slate-500 rounded-[2.5rem] mt-14 relative overflow-hidden">
+		<div className="h-[571px] w-[428px] rounded-[2.5rem] mt-14 relative overflow-hidden shadow-lg">
 			<div className="overlay" />
 			<img src="/images/eventImages/party01.jpeg" alt="" className="w-full h-full object-cover" />
 			<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">
@@ -28,7 +28,7 @@ const Events = () => {
 			</div>
 		</div>
 
-		<div className="h-1/3 aspect-[3/4] bg-slate-500 rounded-[2.5rem] relative overflow-hidden">
+		<div className="h-[571px] w-[428px] rounded-[2.5rem] relative overflow-hidden">
 			<div className="overlay" />
 			<img src="/images/eventImages/wedding01.jpeg" alt="" className="w-full h-full object-cover" />
 			<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">
@@ -41,7 +41,7 @@ const Events = () => {
 
 
 		</div>
-		<div className="h-1/3 aspect-[3/4] bg-slate-500 rounded-[2.5rem] mt-14 relative overflow-hidden">
+		<div className="h-[571px] w-[428px] rounded-[2.5rem] mt-14 relative overflow-hidden">
 			<div className="overlay" />
 			<img src="/images/eventImages/corporate01.jpeg" alt="" className="w-full h-full object-cover" />
 			<div className="absolute top-0 bottom-0 left-0 right-0 w-full h-full flex flex-col">

@@ -1,10 +1,11 @@
-import Navbar from "@/components/Global/Navbar";
+import Navbar from "@/components/global/Navbar";
 
 import ServiceLocations from "@/components/home/ServiceLocations";
 import Events from "@/components/home/Events";
 import BoothPackages from "@/components/home/BoothPackages";
-import VideoHero from "@/components/Global/VideoHero";
+import VideoHero from "@/components/global/VideoHero";
 import ServicesDescription from "@/components/home/ServicesDescription";
+import RequestQuote from "@/components/global/RequestQuote";
 
 
 export default function Home() {
@@ -19,6 +20,9 @@ export default function Home() {
 			<ServicesDescription />
 			<BoothPackages />
 			<Events />
+
+			<RequestQuote />
+
 			<ServiceLocations />
 
 		</main>

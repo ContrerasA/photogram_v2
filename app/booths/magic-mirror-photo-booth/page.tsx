@@ -1,4 +1,4 @@
-import VideoHero from '@/components/Global/VideoHero'
+import VideoHero from '@/components/global/VideoHero'
 import BoothFeatures from '@/components/booths/boothFeatures'
 import { scriptFont } from '@/src/Utils/FontUtils'
 import React from 'react'
