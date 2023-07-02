@@ -7,7 +7,7 @@ const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 const ServicesDescription = () => {
 	return (
-		<section className="w-full my-10">
+		<section className="flex flex-col items-center justify-center w-full mt-20">
 			{/* Stars */}
 			<div className="flex justify-center text-4xl text-yellow-300 mb-5">
 				<AiFillStar />
@@ -16,7 +16,7 @@ const ServicesDescription = () => {
 				<AiFillStar />
 				<AiFillStar />
 			</div>
-			<div className="text-center my-5">
+			<div className="text-center my-5 max-w-[66vw]">
 				<p className={`${scriptFont.className} text-5xl mb-5`}>
 					Picture Perfect Photo Booth Packages
 				</p>

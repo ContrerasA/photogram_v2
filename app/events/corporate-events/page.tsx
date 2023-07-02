@@ -19,7 +19,7 @@ const CorporateEvents = () => {
 				path="/videos/Promo04.mp4"
 				heading="An Excellent Addition To Your Corporate Party"
 				subtitle=""
-				button={{text: 'Photo Booth Packages', path: '#booth-packages'}}
+				button={{ text: 'Photo Booth Packages', path: '#booth-packages' }}
 			/>
 			<div className=' flex justify-center mx-20'>
 				<div className='flex text-center mt-20 justify-between space-x-48'>
@@ -30,7 +30,7 @@ const CorporateEvents = () => {
 								Your Party!
 							</p>
 							<p>
-							Take your corporate party to the next level with the Photogram Booth experience! Our sleek and professional booth adds a touch of excitement, allowing colleagues to bond and capture fun memories together. With high-quality prints and a seamless experience, Photogram Booth is a must-have addition for corporate events that want to create a vibrant and engaging atmosphere.
+								Take your corporate party to the next level with the Photogram Booth experience! Our sleek and professional booth adds a touch of excitement, allowing colleagues to bond and capture fun memories together. With high-quality prints and a seamless experience, Photogram Booth is a must-have addition for corporate events that want to create a vibrant and engaging atmosphere.
 							</p>
 						</div>
 					</div>
@@ -41,7 +41,7 @@ const CorporateEvents = () => {
 								Our Booths
 							</p>
 							<p>
-							Add a touch of distinction to your corporate event with our range of booth options. The digital booth lets guests instantly share moments on social media, the classic photo print booth provides timeless prints, and the mirror booth offers interactive animations and personalized messages. Elevate your corporate celebration with Photogram Booth for an unforgettable experience.
+								Add a touch of distinction to your corporate event with our range of booth options. The digital booth lets guests instantly share moments on social media, the classic photo print booth provides timeless prints, and the mirror booth offers interactive animations and personalized messages. Elevate your corporate celebration with Photogram Booth for an unforgettable experience.
 							</p>
 						</div>
 					</div>
@@ -133,7 +133,7 @@ const CorporateEvents = () => {
 			</div>
 
 			<BoothPackages />
-			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
+			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
 
 		</div>
 	)
