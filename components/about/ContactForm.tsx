@@ -9,6 +9,7 @@ import { Transition } from '@headlessui/react';
 import Link from 'next/link';
 
 import {FaCheck} from 'react-icons/fa'
+import { scriptFont } from '@/src/Utils/FontUtils';
 
 type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
 
@@ -36,7 +37,7 @@ const ContactForm = () => {
 
 	return (
 		<div>
-			<p className="text-3xl text-center">Have Further Questions?</p>
+			<p className={`${scriptFont.className} text-6xl text-center`} >Have Further Questions?</p>
 			<p className="text-lg text-center">Feel free to us either by email info@photogrambooth.com or by simply filling out the form below</p>
 			<p className="text-lg text-center">You may also reach us by phone <a href="tel:408-703-5994" className="text-blue-400">(408) 703-5994</a></p>
 			<p className="text-md text-center">Response typically with 12 hours</p>
