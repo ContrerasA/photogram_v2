@@ -9,6 +9,7 @@ import { Nothing_You_Could_Do } from 'next/font/google'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 import BoothPackages from '@/components/home/BoothPackages'
+import RequestQuote from '@/components/global/RequestQuote'
 
 
 const CorporateEvents = () => {
@@ -18,6 +19,7 @@ const CorporateEvents = () => {
 				path="/videos/Promo04.mp4"
 				heading="An Excellent Addition To Your Corporate Party"
 				subtitle=""
+				button={{text: 'Photo Booth Packages', path: '#booth-packages'}}
 			/>
 			<div className=' flex justify-center mx-20'>
 				<div className='flex text-center mt-20 justify-between space-x-48'>
@@ -131,6 +133,8 @@ const CorporateEvents = () => {
 			</div>
 
 			<BoothPackages />
+			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
+
 		</div>
 	)
 }

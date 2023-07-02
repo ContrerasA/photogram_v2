@@ -1,10 +1,17 @@
 import { scriptFont } from '@/src/Utils/FontUtils'
+import Link from 'next/link'
 import React from 'react'
+
+export type ButtonInformation = {
+	text: string,
+	path: string
+}
 
 export type VideoHeroProps = {
 	heading: string
 	subtitle: string
-	path: string
+	path: string,
+	button?: ButtonInformation
 }
 
 const VideoHero = (props: VideoHeroProps) => {
@@ -19,9 +26,18 @@ const VideoHero = (props: VideoHeroProps) => {
 				<p className="text-xl text-white">{props.subtitle}</p>
 				<div className="flex w-full h-full items-center justify-center">
 					<div className="flex flex-col w-1/2 m-3 space-y-3">
-						<button className="btn ">Photo Booth Packages</button>
-						<button className="btn btn-primary ">Check Availability</button>
-						<button className="btn  ">Book Now</button>
+						{props.button && (
+							<button className="btn ">
+								<Link href={props.button.path}>
+								{props.button.text}
+								</Link>
+							</button>
+						)}
+						<button className="btn btn-primary">
+							<Link href="#request-quote">
+								Instant Quote
+							</Link>
+						</button>
 					</div>
 				</div>
 			</div>

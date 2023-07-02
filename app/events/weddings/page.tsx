@@ -7,6 +7,7 @@ import { AiFillCamera } from 'react-icons/ai'
 import { Nothing_You_Could_Do } from 'next/font/google'
 import BoothPackages from '@/components/home/BoothPackages'
 import BoothFeatures from '@/components/booths/boothFeatures'
+import RequestQuote from '@/components/global/RequestQuote'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 
@@ -17,6 +18,7 @@ const weddings = () => {
 				path="/videos/Promo03.mp4"
 				heading="The Perfect Compliment to your Perfect Wedding"
 				subtitle=""
+				button={{text: 'Photo Booth Packages', path: '#booth-packages'}}
 			/>
 			<div className=' flex justify-center mx-20'>
 				<div className='flex text-center mt-20 justify-between space-x-48'>
@@ -59,6 +61,7 @@ const weddings = () => {
 			{/* Features */}
 			<BoothFeatures booth='premiumBooth'/>			
 
+			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
 			<BoothPackages />
 
 		</div>

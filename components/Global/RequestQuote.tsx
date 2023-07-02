@@ -5,14 +5,18 @@ import React from 'react'
 import serviceLocations from '@/src/data/serviceLocations.json'
 import eventOccasions from '@/src/data/eventOccasions.json'
 
-const RequestQuote = () => {
+interface PropTypes {
+	imagePath: string
+}
+
+const RequestQuote = (props: PropTypes) => {
 	return (
-		<section className='w-full m-auto flex flex-col items-center'>
+		<section id='request-quote' className='w-full m-auto flex flex-col items-center mt-20'>
 			<h1 className={`${scriptFont.className} text-5xl my-5`}>Instant Quote</h1>
 			<p className=''>We offer fast, easy, and instant quotes.</p>
 			<p className='text-sm'>If you'd like to learn more, fill out the information below to receive an instant quote via email.</p>
 			<div className="flex justify-center space-x-20 mt-10 items-center">
-				<img src="/images/eventImages/premiumBooth01.jpg" alt="" className='shadow-lg h-[500px] w-[375px] object-cover rounded-[2.5rem]' />
+				<img src={props.imagePath} alt="" className='shadow-lg h-[500px] w-[375px] object-cover rounded-[2.5rem]' />
 				<form action="" className=''>
 					<div className="mb-4">
 						<label htmlFor="name" className='label'>Name</label>

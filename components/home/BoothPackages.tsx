@@ -6,7 +6,7 @@ const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 const BoothPackages = () => {
 	return (
-		<section className="mt-20">
+		<section id="booth-packages" className="mt-20">
 			<p className={`${scriptFont.className} text-5xl mb-5 text-center`}>
 				Our Booth Services
 			</p>

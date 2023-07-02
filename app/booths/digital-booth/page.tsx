@@ -2,11 +2,16 @@ import VideoHero from '@/components/global/VideoHero'
 import BoothFeatures from '@/components/booths/boothFeatures'
 import { scriptFont } from '@/src/Utils/FontUtils'
 import React from 'react'
+import RequestQuote from '@/components/global/RequestQuote'
 
 const DigitalBooth = () => {
 	return (
 		<section>
-			<VideoHero heading={'Picture Perfect Fun'} subtitle={'Unforgettable Moments with our Digital Photo Booth'} path={'/videos/boothPromoVideos/DigitalBoothPromoVideo01.mp4'} />
+			<VideoHero
+				heading={'Picture Perfect Fun'}
+				subtitle={'Unforgettable Moments with our Digital Photo Booth'}
+				path={'/videos/boothPromoVideos/DigitalBoothPromoVideo01.mp4'}
+			/>
 			<div className='flex mt-20 justify-center items-center space-x-20 w-[66vw] h-[33vh] m-auto'>
 				<img src="/images/eventImages/digitalbooth03.jpg" alt="" className='rounded-[2.5rem] w-1/2 object-cover max-h-full' />
 				<div>
@@ -56,6 +61,8 @@ const DigitalBooth = () => {
 				booth='digitalBooth'
 				includedFeaturesDescription='The Following Features Are Included In Our Digital Booth Packages'
 			/>
+
+			<RequestQuote imagePath='/images/eventImages/corporate01.jpeg'/>
 		</section>
 	)
 }
