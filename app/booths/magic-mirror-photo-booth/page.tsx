@@ -1,4 +1,5 @@
 import VideoHero from '@/components/Global/VideoHero'
+import BoothFeatures from '@/components/booths/boothFeatures'
 import { scriptFont } from '@/src/Utils/FontUtils'
 import React from 'react'
 
@@ -51,6 +52,11 @@ const DigitalBooth = () => {
 				</div>
 				<img src="/images/eventImages/premiumbooth/imageAlbum.jpg" alt="" className='rounded-[2.5rem] w-1/2 object-cover max-h-full' />
 			</div>
+
+			<BoothFeatures
+				booth='mirrorBooth'
+				includedFeaturesDescription='The Following Features Are Included In Our Magic Mirror Photo Booth Packages'
+			/>
 
 
 		</section>

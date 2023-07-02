@@ -6,6 +6,7 @@ import { AiFillCamera } from 'react-icons/ai'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
 import BoothPackages from '@/components/home/BoothPackages'
+import BoothFeatures from '@/components/booths/boothFeatures'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 
@@ -56,75 +57,7 @@ const weddings = () => {
 			</div>
 
 			{/* Features */}
-			<div className='flex flex-col items-center mt-20'>
-				<p className={`${scriptFont.className} text-6xl mb-5`}>Included Features</p>
-				<p>The Following Features Are Included In The Preimum And Magic Mirror Photo Booth Package</p>
-				<div className='flex flex-wrap mx-20 space-x-10 justify-center'>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/weddingPhotoTemplateExample.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Custom Photo Templates</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/weddingProps.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Wedding Props</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/backdrops/whitefloral_osrnmc.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Backdrops</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/DslrCamera.png" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• High Quality Pictures</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/kardashianFilter.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Filters</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/weddingPhotoStrips.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Unlimited Prints</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/photoBoothAttendant.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Photo Booth Attendant</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10'>
-						<img src="/images/promoImages/socialMediaIcons.png" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Instant Digital Photos</p>
-					</div>
-				</div>
-			</div>
-
-			<div className='flex flex-col items-center mt-20'>
-				<p className={`${scriptFont.className} text-6xl mb-5`}>Additional Optional Features</p>
-				<p>The Following Optional Features Are For The Preimum And Magic Mirror Photo Booth Package</p>
-				<div className='flex flex-wrap mx-20 space-x-10 justify-center'>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/4x6wedding.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• 4x6 Photo Prints</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/scrapbook.png" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Scrapbook</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/greenScreen.png" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Green Screen</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/wifiHotSpot.png" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• WiFi Hotspot</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/weddingLedNeonSign.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Custom Props & Signs</p>
-					</div>
-					<div className='w-1/4 text-center flex flex-col items-center space-y-4 mt-10 rounded-xl '>
-						<img src="/images/promoImages/floralBackdrop.jpg" alt="" className='h-[233px] w-[350px] object-cover rounded-3xl' />
-						<p>• Premium Backdrops</p>
-					</div>
-				</div>
-			</div>
+			<BoothFeatures booth='premiumBooth'/>			
 
 			<BoothPackages />
 
