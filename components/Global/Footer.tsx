@@ -18,9 +18,9 @@ const Footer = () => {
 				<div className='w-1/6 text-center flex flex-col'>
 					<p className={`${scriptFont.className} text-2xl mb-2`}>Services</p>
 					<hr className='mb-2' />
-					<p>Digital Booth</p>
-					<p>Premium Photo Booth</p>
-					<p>Magic Mirror Booth</p>
+					<Link href="/booths/digital-booth">Digital Booth</Link>
+					<Link href="/booths/premium-photo-booth">Premium Photo Booth</Link>
+					<Link href="/booths/magic-mirror-photo-booth">Magic Mirror Booth</Link>
 					<br />
 					<Link href={"/events/weddings"}>Weddings</Link>
 					<Link href={"/events/parties"}>Parties</Link>

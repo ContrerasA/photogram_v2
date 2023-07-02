@@ -14,7 +14,7 @@ export default function Home() {
 			<VideoHero
 				path="/videos/Promo01.mp4"
 				heading="Whether you're looking to rent a photo booth for a private, or corporate event, we have you covered"
-				subtitle="This is a test"
+				subtitle="Have a look at our Bay Area Photo Booth Packages Now"
 			/>
 			<ServicesDescription />
 			<BoothPackages />

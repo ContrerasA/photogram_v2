@@ -1,7 +1,22 @@
+'use client';
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 
 const Navbar = () => {
+
+	function mouseDownHandler(e) {
+		const el = document.querySelector('details');
+		if (el?.hasAttribute('open')) {
+			setTimeout(() => {
+				el.removeAttribute('open')
+			}, 250);
+		}
+	}
+
+	useEffect(() => {
+		document.addEventListener('mousedown', mouseDownHandler);
+	})
+
 	return (
 		<div className="navbar bg-base-100 sticky top-0 z-50">
 			<div className="navbar-start">
@@ -21,21 +36,24 @@ const Navbar = () => {
 						<li><a>Item 3</a></li>
 					</ul>
 				</div>
-				{/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
-				{/* <a className="btn btn-ghost"> */}
 				<img src="/images/logos/Logo Rev A2 Flat Long.svg" alt="" className='h-8' />
-				{/* </a> */}
 			</div>
 			<div className="navbar-center hidden lg:flex">
-				<ul className="menu menu-horizontal px-1">
+				<ul id='boothPackagesMenu' className="menu menu-horizontal px-1">
 					<li><Link href="/">Home</Link></li>
 					<li tabIndex={0}>
 						<details>
 							<summary>Booth Packages</summary>
 							<ul className="p-2 z-50">
-								<li className=' z-50'><a>Digital Booth</a></li>
-								<li className=' z-50'><a>Premium Photo Booth</a></li>
-								<li className=' z-50'><a>Magic Mirror Booth</a></li>
+								<li className=' z-50'>
+									<Link href="/booths/digital-booth">Digital Booth</Link>
+								</li>
+								<li className=' z-50'>
+									<Link href="/booths/premium-photo-booth">Premium Photo Booth</Link>
+								</li>
+								<li className=' z-50'>
+									<Link href="/booths/magic-mirror-photo-booth">Magic Mirror Booth</Link>
+								</li>
 							</ul>
 						</details>
 					</li>

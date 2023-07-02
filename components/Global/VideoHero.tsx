@@ -1,3 +1,4 @@
+import { scriptFont } from '@/src/Utils/FontUtils'
 import React from 'react'
 
 export type VideoHeroProps = {
@@ -14,8 +15,8 @@ const VideoHero = (props: VideoHeroProps) => {
 			</video>
 			<div className="overlay" />
 			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-				<p className="text-4xl font-bold text-white">{props.heading}</p>
-				<p className="text-xl font-bold text-white">{props.subtitle}</p>
+				<p className={`${scriptFont.className} text-6xl font-bold text-white mb-5`}>{props.heading}</p>
+				<p className="text-xl text-white">{props.subtitle}</p>
 				<div className="flex w-full h-full items-center justify-center">
 					<div className="flex flex-col w-1/2 m-3 space-y-3">
 						<button className="btn ">Photo Booth Packages</button>
