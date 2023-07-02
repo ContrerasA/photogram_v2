@@ -20,27 +20,27 @@ const RequestQuote = (props: PropTypes) => {
 				<form action="" className=''>
 					<div className="mb-4">
 						<label htmlFor="name" className='label'>Name</label>
-						<input type="text" name='name' className='input-field' />
+						<input type="text" id='name' name='name' className='input-field' />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="name" className='label'>Email</label>
-						<input type="email" name='email' className='input-field' />
+						<label htmlFor="email" className='label'>Email</label>
+						<input type="email" id='email' name='email' className='input-field' />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="name" className='label'>Event Date</label>
-						<input type="date" name='date' className='input-field' />
+						<label htmlFor="eventDate" className='label'>Event Date</label>
+						<input type="date" id='eventDate' name='eventDate' className='input-field' />
 					</div>
 					<div className="mb-4">
-						<label htmlFor="name" className='label'>Event Location</label>
-						<select name="eventLocation" className='input-field'>
+						<label htmlFor="eventLocation" className='label'>Event Location</label>
+						<select name="eventLocation" id="eventLocation" className='input-field'>
 							{serviceLocations.map((el, index) => (
 								<option key={index} value={el.city}>{el.city}, {el.state}</option>
 							))}
 						</select>
 					</div>
 					<div className="mb-4">
-						<label htmlFor="name" className='label'>Event Occasion</label>
-						<select name="eventOccasion" className='input-field'>
+						<label htmlFor="eventOccasion" className='label'>Event Occasion</label>
+						<select name="eventOccasion" id='eventOccasion' className='input-field'>
 							{eventOccasions.map((el, index) => (
 								<option key={index} value={el}>{el}</option>
 							))}

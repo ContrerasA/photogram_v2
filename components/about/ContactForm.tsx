@@ -47,15 +47,15 @@ const ContactForm = () => {
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="mb-4">
 							<label htmlFor="name" className='label'>Name</label>
-							<input type="text" name='name' className='input-field' />
+							<input type="text" id='name' name='name' className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="email" className='label'>Email</label>
-							<input type="email" name='email' className='input-field' />
+							<input type="email" id='email' name='email' className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="message" className='label'>Message</label>
-							<textarea name='message' rows={8} className='input-field' />
+							<textarea name='message' id='message' rows={8} className='input-field' />
 						</div>
 						<div className="mb-4 flex justify-center">
 							<input type="submit" className="btn btn-primary" />
