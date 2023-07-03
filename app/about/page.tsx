@@ -1,8 +1,9 @@
-import { scriptFont } from '@/src/utils/fontUtils'
 import React from 'react'
 
 import frequentlyAskedQuestions from '@/src/data/frequentlyAskedQuestions.json'
 import ContactForm from '@/components/about/ContactForm'
+
+import { scriptFont } from '@/src/utils/fontUtils'
 
 const About = () => {
 	return (
