@@ -21,10 +21,10 @@ const ServicesDescription = () => {
 					Picture Perfect Photo Booth Packages
 				</p>
 
-				<p className="mb-5 text-sm">
+				<p className="mb-5">
 					Welcome to Photohram Booth, where unforgettable memories come to life! With our open-air booths, we capture stunning pictures that beautifully encapsulate the joy and laughter of your guests. From spontaneous snapshots to heartfelt moments, our booths are the perfect addition to any event, ensuring an experience filled with cherished memories that will last a lifetime.
 				</p>
-				<p className=" text-sm">
+				<p className="">
 					At our Photogram Booth, we pride ourselves on delivering excellence through every click. Our state-of-the-art equipment ensures that every picture taken is of the highest quality, capturing the finest details and vibrant colors. Moreover, our dedicated attendants are committed to providing an effortless and stress-free experience, handling all the logistics and ensuring that your guests can focus on enjoying the moment while we take care of the rest.
 				</p>
 			</div>

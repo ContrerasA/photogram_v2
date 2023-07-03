@@ -13,10 +13,10 @@ const Gallery = () => {
 		<div className='w-full h-full text-center mt-10'>
 			<p className={`${scriptFont.className} text-6xl mb-5`}>Backdrops</p>
 			<p>Below is a list of backdrops you can choose from for your event</p>
-			<div className='flex flex-col items-center justify-center'>
-				<p className={`${scriptFont.className} text-3xl mt-20`}>Standard Backdrops</p>
+			<div className='flex flex-col items-center justify-center w-3/4 mx-auto'>
+				<p className={`${scriptFont.className} text-5xl mt-20`}>Standard Backdrops</p>
 
-				<div className='flex flex-wrap w-3/4'>
+				<div className='flex flex-wrap justify-center'>
 					{
 						standardBackdrops.map(el => (
 							<div key={el.id} className='flex flex-col items-center p-5'>
@@ -33,9 +33,9 @@ const Gallery = () => {
 			</div>
 
 			<div className='flex flex-col items-center justify-center'>
-				<p className={`${scriptFont.className} text-3xl mt-20`}>Premium Backdrops</p>
+				<p className={`${scriptFont.className} text-5xl mt-20`}>Premium Backdrops</p>
 
-				<div className='flex flex-wrap w-3/4'>
+				<div className='flex justify-center flex-wrap w-3/4'>
 					{
 						premiumBackdrops.map(el => (
 							<div key={el.id} className='flex flex-col items-center p-5'>

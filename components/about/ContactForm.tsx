@@ -10,7 +10,7 @@ import Link from 'next/link';
 import {FaCheck} from 'react-icons/fa'
 import { scriptFont } from '@/src/Utils/FontUtils';
 
-type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
+export type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
 
 const ContactForm = () => {
 	const [contactState, setContactState] = useState<ContactState>('incomplete');
@@ -18,7 +18,7 @@ const ContactForm = () => {
 	const { register, handleSubmit, watch, formState } = useForm({
 		defaultValues: {
 			name: process.env.NODE_ENV !== 'production' ? 'Anthony C' : '',
-			email: process.env.NODE_ENV !== 'production' ? 'test' : '',
+			email: process.env.NODE_ENV !== 'production' ? 'test@gmail.com' : '',
 			message: process.env.NODE_ENV !== 'production' ? 'I was wondering...' : '',
 		}
 	});
@@ -47,15 +47,15 @@ const ContactForm = () => {
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="mb-4">
 							<label htmlFor="name" className='label'>Name</label>
-							<input type="text" id='name' name='name' className='input-field' />
+							<input type="text" id='name' {...register("name")} className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="email" className='label'>Email</label>
-							<input type="email" id='email' name='email' className='input-field' />
+							<input type="email" id='email' {...register("email")} className='input-field' />
 						</div>
 						<div className="mb-4">
 							<label htmlFor="message" className='label'>Message</label>
-							<textarea name='message' id='message' rows={8} className='input-field' />
+							<textarea id='message' rows={8} {...register("message")} className='input-field' />
 						</div>
 						<div className="mb-4 flex justify-center">
 							<input type="submit" className="btn btn-primary" />
