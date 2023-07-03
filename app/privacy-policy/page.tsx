@@ -1,4 +1,4 @@
-import { scriptFont } from '@/src/utils/FontUtils'
+import { scriptFont } from '@/src/utils/fontUtils'
 import React from 'react'
 
 import privacyPolicies from '@/src/data/privacyPolicy.json'

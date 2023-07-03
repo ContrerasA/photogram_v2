@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { scriptFont } from '@/src/utils/FontUtils'
+import { scriptFont } from '@/src/utils/fontUtils'
 
 import galleryImages from '@/src/data/galleryImages.json'
 

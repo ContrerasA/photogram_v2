@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form'
 import Link from 'next/link';
 
 import {FaCheck} from 'react-icons/fa'
-import { scriptFont } from '@/src/utils/FontUtils';
+import { scriptFont } from '@/src/utils/fontUtils';
 
 export type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
 
@@ -18,7 +18,7 @@ const ContactForm = () => {
 	const { register, handleSubmit, watch, formState } = useForm({
 		defaultValues: {
 			name: process.env.NODE_ENV !== 'production' ? 'Anthony C' : '',
-			email: process.env.NODE_ENV !== 'production' ? 'test@gmail.com' : '',
+			email: process.env.NODE_ENV !== 'production' ? 'test@gmail.com' : '',A
 			message: process.env.NODE_ENV !== 'production' ? 'I was wondering...' : '',
 		}
 	});

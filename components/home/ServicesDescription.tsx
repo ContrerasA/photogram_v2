@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 
-import { scriptFont } from '@/src/utils/FontUtils'
+import { scriptFont } from '@/src/utils/fontUtils'
 
 
 

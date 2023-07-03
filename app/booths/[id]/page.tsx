@@ -2,7 +2,7 @@ import React from 'react'
 
 import boothData from '@/src/data/boothData.json'
 import VideoHero from '@/components/global/VideoHero';
-import { scriptFont } from '@/src/utils/FontUtils';
+import { scriptFont } from '@/src/utils/fontUtils';
 import BoothFeatures from '@/components/booths/boothFeatures';
 import RequestQuote from '@/components/global/RequestQuote';
 

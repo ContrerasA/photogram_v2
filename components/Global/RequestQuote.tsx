@@ -1,5 +1,5 @@
 'use client';
-import { scriptFont } from '@/src/utils/FontUtils'
+import { scriptFont } from '@/src/utils/fontUtils'
 import React, { useState } from 'react'
 
 import serviceLocations from '@/src/data/serviceLocations.json'

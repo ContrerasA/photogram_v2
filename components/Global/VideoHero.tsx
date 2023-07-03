@@ -1,4 +1,4 @@
-import { scriptFont } from '@/src/utils/FontUtils'
+import { scriptFont } from '@/src/utils/fontUtils'
 import Link from 'next/link'
 import React from 'react'
 
