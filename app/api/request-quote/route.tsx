@@ -20,7 +20,6 @@ async function generateTemplate(data : any) {
 
 export async function POST(res: Request) {
 	const data = await res.json();
-	console.log(data)
 
 	let emailTemplate = await generateTemplate(data);
 

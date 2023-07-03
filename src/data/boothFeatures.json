@@ -4,7 +4,7 @@
 	{"id": 3, "booth" : ["digitalBooth"], "type": "included", "imagePath": "/images/promoImages/4x6wedding2.png", "description": "Custom Photo Templates"},
 	{"id": 4, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "included", "imagePath": "/images/promoImages/groupPhoto02.jpg", "description": "Party Props"},
 	{"id": 5, "booth" : ["premiumBooth", "mirrorBooth"], "type": "included", "imagePath": "/images/backdrops/whitefloral_osrnmc.jpg", "description": "Backdrops"},
-	{"id": 6, "booth" : ["premiumBooth", "mirrorBooth"], "type": "included", "imagePath": "/images/promoImages/DslrCamera.png", "description": "High Quality Pictures"},
+	{"id": 6, "booth" : ["premiumBooth", "mirrorBooth"], "type": "included", "imagePath": "/images/promoImages/dslrCamera.png", "description": "High Quality Pictures"},
 	{"id": 7, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "included", "imagePath": "/images/promoImages/kardashianFilter.jpg", "description": "Filters"},
 	{"id": 8, "booth" : ["premiumBooth", "mirrorBooth"], "type": "included", "imagePath": "/images/promoImages/weddingPhotoStrips.jpg", "description": "Unlimited Prints"},
 	{"id": 9, "booth" : ["premiumBooth", "mirrorBooth"], "type": "included", "imagePath": "/images/promoImages/photoBoothAttendant.jpg", "description": "Photo Booth Attendant"},

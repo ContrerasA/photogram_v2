@@ -1,8 +1,8 @@
 import React from 'react'
 import { AiFillStar } from 'react-icons/ai'
 
-import { Nothing_You_Could_Do } from 'next/font/google'
-const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
+import { scriptFont } from '@/src/utils/FontUtils'
+
 
 
 const ServicesDescription = () => {

@@ -14,7 +14,7 @@
 			{
 				"title" :"Digital Booth Rentals",
 				"description": "With its sleek design, the digital booth packs a truly modern photo booth experience into a tiny footprint. Beyond traditional photos, the digital booth can take GIFs, boomerangs, and videos so you can turn your digital booth rental into a GIF booth rental, boomerang booth rental - or even enable all of them at once! Complete with built in sharing tools, sharing your photos has never been easier. Send your favorite snaps via text, email and airdrop with the push of a button and relive your favorite moments.",
-				"imagePath": "/images/eventImages/digitalbooth03.jpg"
+				"imagePath": "/images/eventImages/digitalBooth03.jpg"
 			},
 			{
 				"title": "Photo, GIFs, Boomerangs and Videos",
@@ -69,7 +69,7 @@
 			{
 				"title": "Social Media Sharing",
 				"description": "After your event, we will send you a link to all of the printed collages as well as the original photos. These make great assets for any branding photo booth, and even better memories if you're looking for a wedding photo booth rental.",
-				"imagePath": "/images/eventImages/premiumbooth/imageAlbum.jpg"
+				"imagePath": "/images/eventImages/premiumBooth/imageAlbum.jpg"
 			}
 		],
 		"boothFeatures": {
