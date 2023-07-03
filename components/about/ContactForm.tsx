@@ -8,7 +8,7 @@ import { useForm } from 'react-hook-form'
 import Link from 'next/link';
 
 import {FaCheck} from 'react-icons/fa'
-import { scriptFont } from '@/src/Utils/FontUtils';
+import { scriptFont } from '@/src/utils/FontUtils';
 
 export type ContactState = 'incomplete' | 'submitting' | 'complete' | 'error';
 
@@ -26,7 +26,7 @@ const ContactForm = () => {
 	const onSubmit = async (data: any) => {
 		setContactState('submitting');
 		data.date = format(new Date(), 'MMMM d, yyy @ h:m:aaa')
-		// let res = await axios.post(`api/contact`, data)
+		let res = await axios.post(`/api/contact`, data)
 		console.log(data)
 
 		setTimeout(() => {

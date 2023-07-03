@@ -1,4 +1,4 @@
-import { scriptFont } from '@/src/Utils/FontUtils'
+import { scriptFont } from '@/src/utils/FontUtils'
 import React from 'react'
 
 import boothFeatures from '@/src/data/boothFeatures.json';

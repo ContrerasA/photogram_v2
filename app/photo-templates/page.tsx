@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { scriptFont } from '@/src/Utils/FontUtils'
+import { scriptFont } from '@/src/utils/FontUtils'
 
 import photoTemplates from '@/src/data/photoTemplates.json'
 

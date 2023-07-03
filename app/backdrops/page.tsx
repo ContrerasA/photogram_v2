@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { scriptFont } from '@/src/Utils/FontUtils'
+import { scriptFont } from '@/src/utils/FontUtils'
 
 import backdropImages from '@/src/data/backdropImages.json'
 
