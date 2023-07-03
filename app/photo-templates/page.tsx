@@ -21,12 +21,16 @@ const PhotoTemplates = () => {
 			</div>
 			<div className='flex justify-center'>
 
-				<div className='flex flex-wrap m-20 w-3/4 justify-center'>
+				<div className='flex flex-wrap lg:m-20 lg:w-3/4 justify-center'>
 					{
 						photoTemplates.map(el => (
-							<div key={el.id} className='basis-1/4 p-10 flex flex-col items-center'>
+							<div key={el.id} className='p-10 flex flex-col items-center'>
 								<img src={el.path} className='object-contain rounded-3xl h-[550px]' />
-								<p>• {el.name}</p>
+								<div className='flex justfify-center'>
+									<span className='text-primary'>•</span>
+									<p>&nbsp;{el.name}&nbsp;</p>
+									<span className='text-primary'>•</span>
+								</div>
 
 							</div>
 						))
