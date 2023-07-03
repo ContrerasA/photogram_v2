@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 8086",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,6 +19,7 @@
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.7",
     "form-data": "^4.0.0",
+    "handlebars": "^4.7.7",
     "mailgun.js": "^9.1.2",
     "next": "13.4.7",
     "postcss": "8.4.24",

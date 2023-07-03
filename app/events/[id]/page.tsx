@@ -39,7 +39,7 @@ interface EventData {
 	}
 }
 
-const Events = ({ params }) => {
+const Events = ({ params }: any) => {
 	// @ts-ignore
 	const data: EventData = eventsMarketingData.find(el => el.path === params.id);
 
@@ -54,8 +54,8 @@ const Events = ({ params }) => {
 			/>
 
 			<div className='flex flex-col lg:flex-row mt-20 justify-center lg:space-x-40 max-w-[90vw] mx-auto space-y-10 lg:space-y-0'>
-				{data.about.map(el => (
-					<div className='w-full lg:w-1/3 flex flex-col items-center text-center h-full '>
+				{data.about.map((el, index) => (
+					<div key={index} className='w-full lg:w-1/3 flex flex-col items-center text-center h-full '>
 						<img src={el.iconPath} alt="" width={96} className='flex-grow mb-5' />
 						<p className={`${scriptFont.className} text-6xl`}>{el.title}</p>
 						<p className=''>{el.description}</p>
@@ -94,16 +94,16 @@ const Events = ({ params }) => {
 
 export default Events
 
-export const getStaticPaths = async () => {
-	let ids = eventsMarketingData.map(el => el.path);
+// export const getStaticPaths = async () => {
+// 	let ids = eventsMarketingData.map(el => el.path);
 
-	const paths = ids.map(id => (
-		{
-			params:
-				{ id: id.toString() }
-		}))
-	return {
-		paths,
-		fallback: false
-	}
-}
+// 	const paths = ids.map(id => (
+// 		{
+// 			params:
+// 				{ id: id.toString() }
+// 		}))
+// 	return {
+// 		paths,
+// 		fallback: false
+// 	}
+// }

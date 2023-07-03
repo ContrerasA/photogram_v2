@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Nothing_You_Could_Do } from 'next/font/google'
+import Link from 'next/link'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 
@@ -24,7 +25,7 @@ const Events = () => {
 						<div className="flex-grow"></div>
 						<div className="flex flex-col flex-end mb-10 justify-center items-center">
 							<p className={`${scriptFont.className} text-5xl mb-5 text-center text-white`}>Parties</p>
-							<button className="btn btn-primary">LEARN MORE</button>
+							<Link href="/events/parties" className='w-1/2 my-7'><button className="btn btn-primary w-full ">LEARN MORE</button></Link>
 						</div>
 					</div>
 				</div>
@@ -36,7 +37,7 @@ const Events = () => {
 						<div className="flex-grow"></div>
 						<div className="flex flex-col flex-end mb-10 justify-center items-center">
 							<p className={`${scriptFont.className} text-5xl mb-5 text-center text-white`}>Weddings</p>
-							<button className="btn btn-primary">LEARN MORE</button>
+							<Link href="/events/weddings" className='w-1/2 my-7'><button className="btn btn-primary w-full ">LEARN MORE</button></Link>
 						</div>
 					</div>
 
@@ -49,7 +50,8 @@ const Events = () => {
 						<div className="flex-grow"></div>
 						<div className="flex flex-col flex-end mb-10 justify-center items-center">
 							<p className={`${scriptFont.className} text-5xl mb-5 text-center text-white`}>Corporate</p>
-							<button className="btn btn-primary">LEARN MORE</button>
+							<Link href="/events/corporate-events" className='w-1/2 my-7'><button className="btn btn-primary w-full ">LEARN MORE</button></Link>
+
 						</div>
 					</div>
 

@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form';
 import format from 'date-fns/format';
 import Link from 'next/link';
 import { FaCheck } from 'react-icons/fa';
+import axios from 'axios';
 
 interface PropTypes {
 	imagePath: string
@@ -30,8 +31,8 @@ const RequestQuote = (props: PropTypes) => {
 	const onSubmit = async (data: any) => {
 		setContactState('submitting');
 		data.date = format(new Date(), 'MMMM d, yyy @ h:m:aaa')
-		// let res = await axios.post(`api/contact`, data)
-		console.log(data)
+		data.eventDate = format(new Date(data.eventDate), 'MMMM d, yyy')
+		let res = await axios.post(`/api/request-quote`, data)
 
 		setTimeout(() => {
 			setContactState('complete');
@@ -42,8 +43,8 @@ const RequestQuote = (props: PropTypes) => {
 		<section id='request-quote' className='w-full m-auto flex flex-col items-center mt-20'>
 			<h1 className={`${scriptFont.className} text-5xl my-5`}>Instant Quote</h1>
 			<p className=''>We offer fast, easy, and instant quotes.</p>
-			<p className='text-sm'>If you'd like to learn more, fill out the information below to receive an instant quote via email.</p>
-			<p className='text-sm font-light'>Hate spam? Don't worry, we do too. We'll never send you unscolicited mail</p>
+			<p className='text-sm'>If you&apos;d like to learn more, fill out the information below to receive an instant quote via email.</p>
+			<p className='text-sm font-light'>Hate spam? Don&apos;t worry, we do too. We&apos;ll never send you unscolicited mail</p>
 			<div className="flex flex-col lg:flex-row justify-center lg:space-x-20 mt-10 items-center w-full relative">
 				<img src={props.imagePath} alt="" className='shadow-lg hidden lg:block h-[500px] w-[375px] object-cover lg:rounded-[2.5rem] ' />
 				<form onSubmit={handleSubmit(onSubmit)} className='w-full max-w-[90vw] lg:w-1/3 '>

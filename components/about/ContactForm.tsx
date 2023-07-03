@@ -27,7 +27,6 @@ const ContactForm = () => {
 		setContactState('submitting');
 		data.date = format(new Date(), 'MMMM d, yyy @ h:m:aaa')
 		let res = await axios.post(`/api/contact`, data)
-		console.log(data)
 
 		setTimeout(() => {
 			setContactState('complete');
@@ -76,7 +75,7 @@ const ContactForm = () => {
 					<div className="flex flex-col justify-center items-center absolute top-0 left-0 h-full w-full bg-white bg-opacity-90">
 						<FaCheck className="h-32 w-32 text-green-300" />
 						<p className="mt-10 text-xl text-accent font-bold">REQUEST SENT</p>
-						<p className="text-lg">We'll get back to you as soon as we can</p>
+						<p className="text-lg">We&apos;ll get back to you as soon as we can</p>
 						<Link href="/"><button className="btn btn-primary mt-5">RETURN HOME</button></Link>
 					</div>
 				)}

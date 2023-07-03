@@ -13,7 +13,7 @@ const PhotoTemplates = () => {
 					No party is complete without custom photo templates. Included in the Premium Photo Booth & Magic Mirror is a personalized custom template to perfectly compliment your event.
 				</p>
 				<p>
-					Below are some examples of templates available. We'll work with you ensure the photo template is perfect for your occasion.
+					Below are some examples of templates available. We&apos;ll work with you ensure the photo template is perfect for your occasion.
 				</p>
 				<p>
 					Each template is available in 2x6 and 4x6 format

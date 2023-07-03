@@ -32,7 +32,7 @@ interface BoothData {
 }
 
 
-const Page = async ({ params }) => {
+const Page = async ({ params } : any) => {
 	// @ts-ignore
 	const data: BoothData = boothData.find(el => el.path === params.id);
 
@@ -47,7 +47,7 @@ const Page = async ({ params }) => {
 
 			<div className="flex flex-col mt-10 w-full items-center">
 				{data.marketingInfo.map((el, index) => (
-					<div className='  lg:w-2/3 flex flex-col even:lg:flex-row lg:flex-row-reverse mt-10 justify-center items-center'>
+					<div key={index} className='  lg:w-2/3 flex flex-col even:lg:flex-row lg:flex-row-reverse mt-10 justify-center items-center'>
 						<div className="flex flex-col w-3/4 mx-20">
 							<p className={`${scriptFont.className} text-4xl text-center`}>{el.title}</p>
 							<p className=''>{el.description}</p>
@@ -74,16 +74,16 @@ export default Page
 
 
 
-export const getStaticPaths = async () => {
-	let ids = boothData.map(el => el.path);
+// export const getStaticPaths = async () => {
+// 	let ids = boothData.map(el => el.path);
 
-	const paths = ids.map(id => (
-		{
-			params:
-				{ id: id.toString() }
-		}))
-	return {
-		paths,
-		fallback: false
-	}
-}
+// 	const paths = ids.map(id => (
+// 		{
+// 			params:
+// 				{ id: id.toString() }
+// 		}))
+// 	return {
+// 		paths,
+// 		fallback: false
+// 	}
+// }
