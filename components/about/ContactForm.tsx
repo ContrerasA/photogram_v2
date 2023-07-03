@@ -18,7 +18,7 @@ const ContactForm = () => {
 	const { register, handleSubmit, watch, formState } = useForm({
 		defaultValues: {
 			name: process.env.NODE_ENV !== 'production' ? 'Anthony C' : '',
-			email: process.env.NODE_ENV !== 'production' ? 'test@gmail.com' : '',A
+			email: process.env.NODE_ENV !== 'production' ? 'test@gmail.com' : '',
 			message: process.env.NODE_ENV !== 'production' ? 'I was wondering...' : '',
 		}
 	});
