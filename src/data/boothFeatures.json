@@ -17,7 +17,7 @@
 	{"id": 15, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "optional", "imagePath": "/images/promoImages/wifiHotSpot.png", "description": "WiFi Hotspot"},
 	{"id": 16, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "optional", "imagePath": "/images/promoImages/weddingLedNeonSign.jpg", "description": "Custom Props & Signs"},
 	{"id": 17, "booth" : ["digitalBooth"], "type": "optional", "imagePath": "/images/backdrops/whitefloral_osrnmc.jpg", "description": "Backdrops"},
-	{"id": 18, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "optional", "imagePath": "/images/promoImages/floralBackdrop.jpg", "description": "Premium Backdrops"},
+	{"id": 18, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "optional", "imagePath": "/images/backdrops/goldSequinBackdrop.jpg", "description": "Premium Backdrops"},
 	{"id": 19, "booth" : ["mirrorBooth"], "type": "optional", "imagePath": "/images/eventImages/mirrorBooth/maxresdefault.jpg", "description": "Red Carpet Experience"},
 	{"id": 20, "booth" : ["premiumBooth", "mirrorBooth", "digitalBooth"], "type": "optional", "imagePath": "/images/promoImages/generator.jpeg", "description": "Outdoor Power Generator"}
 ]
