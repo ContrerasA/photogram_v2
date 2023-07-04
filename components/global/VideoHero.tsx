@@ -48,15 +48,15 @@ const VideoHero = (props: VideoHeroProps) => {
 				<p className={`${scriptFont.className} text-4xl md:text-6xl font-bold text-white mb-5`}>{props.heading}</p>
 				<p className="text-xl text-white pt-3">{props.subtitle}</p>
 				<div className="flex w-full  items-center justify-center mt-5">
-					<div className="flex flex-col md:w-1/2  space-y-3">
+					<div className="flex flex-col md:w-1/2  space-y-3 items-center">
 						{props.button && (
-							<button className="btn ">
+							<button className="btn  w-64">
 								<Link href={props.button.path}>
 									{props.button.text}
 								</Link>
 							</button>
 						)}
-						<button className="btn btn-primary">
+						<button className="btn btn-primary w-64">
 							<Link href="#request-quote">
 								Instant Quote
 							</Link>
