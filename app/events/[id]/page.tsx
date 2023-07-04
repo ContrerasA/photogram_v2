@@ -46,22 +46,24 @@ const Events = ({ params }: any) => {
 
 	return (
 		<div>
-			{/* <VideoHero
+			<VideoHero
 				path={data.videoHero.path}
 				heading={data.videoHero.heading}
 				subtitle={data.videoHero.subtitle}
 				button={{ text: data.videoHero.button.text, path: data.videoHero.button.path }}
-			/> */}
+			/>
 
-			<div className='flex flex-col lg:flex-row mt-20 justify-center lg:space-x-40  mx-auto space-y-10 lg:space-y-0'>
-				{data.about.map((el, index) => (
-					<div key={index} className='w-full lg:w-1/3 flex flex-col items-center text-center h-full '>
-						<img src={el.iconPath} alt="" width={96} className='flex-grow mb-5' />
-						<p className={`${scriptFont.className} text-6xl`}>{el.title}</p>
-						<p className=''>{el.description}</p>
-					</div>
-				))}
-			</div>
+			<section>
+				<div className='flex flex-col lg:flex-row mt-20 justify-center lg:space-x-40  mx-auto space-y-10 lg:space-y-0'>
+					{data.about.map((el, index) => (
+						<div key={index} className='w-full lg:w-1/3 flex flex-col items-center text-center h-full '>
+							<img src={el.iconPath} alt="" width={96} className='flex-grow mb-5' />
+							<p className={`${scriptFont.className} text-6xl`}>{el.title}</p>
+							<p className=''>{el.description}</p>
+						</div>
+					))}
+				</div>
+			</section>
 
 
 			{/* Events Promo Image */}
@@ -83,12 +85,14 @@ const Events = ({ params }: any) => {
 				)}
 			</div>
 
-			{/* Features */}
-			<BoothFeatures booth='premiumBooth' />
-			<BoothServices />
-			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
+			<section>
+				{/* Features */}
+				<BoothFeatures booth='premiumBooth' />
+				<BoothServices />
+				<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
+			</section >
 
-		</div>
+		</div >
 	)
 }
 

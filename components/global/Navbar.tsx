@@ -48,7 +48,7 @@ const Navbar = () => {
 						</li>
 						<li tabIndex={1}>
 							<details>
-								<summary>Booth Packages</summary>
+								<summary>Events</summary>
 								<ul className="p-2 z-50">
 									<li className=' z-50'>
 										<Link href="/events/weddings">Weddings</Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
 					</li>
 					<li tabIndex={1}>
 						<details>
-							<summary>Booth Packages</summary>
+							<summary>Events</summary>
 							<ul className="p-2 z-50">
 								<li className=' z-50'>
 									<Link href="/events/weddings">Weddings</Link>
@@ -106,9 +106,6 @@ const Navbar = () => {
 							</ul>
 						</details>
 					</li>
-
-
-
 					<li><Link href="/gallery">Gallery</Link></li>
 					<li><Link href="/photo-templates">Photo Templates</Link></li>
 					<li><Link href="/backdrops">Backdrops</Link></li>
