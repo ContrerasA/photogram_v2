@@ -48,8 +48,8 @@ const Page = async ({ params }: any) => {
 			<section>
 				<div className="flex flex-col mt-10 w-full items-center">
 					{data.marketingInfo.map((el, index) => (
-						<div key={index} className='  lg:w-2/3 flex flex-col even:lg:flex-row lg:flex-row-reverse mt-10 justify-center items-center'>
-							<div className="flex flex-col w-3/4 mx-20">
+						<div key={index} className='lg:w-2/3 flex flex-col even:lg:flex-row lg:flex-row-reverse mt-10 justify-center items-center'>
+							<div className="flex flex-col w-full lg:w-3/4 mx-20">
 								<p className={`${scriptFont.className} text-4xl text-center`}>{el.title}</p>
 								<p className=''>{el.description}</p>
 							</div>
