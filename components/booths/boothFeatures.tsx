@@ -43,7 +43,7 @@ const BoothFeatures = (props: PropsType) => {
 				{props.optionalFeaturesDescription ?
 					<p>{props.optionalFeaturesDescription}</p>
 					:
-					<p>The Following Optional Features Are For Preimum And Magic Mirror Photo Booth Packages</p>
+					<p>The Following Optional Features Are For Premium And Magic Mirror Photo Booth Packages</p>
 				}
 				<div className='flex flex-wrap justify-center'>
 					{OptionalFeatures.map((el, index) => (

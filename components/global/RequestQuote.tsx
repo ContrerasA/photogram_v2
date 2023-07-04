@@ -46,7 +46,7 @@ const RequestQuote = (props: PropTypes) => {
 				<h1 className={`${scriptFont.className} text-5xl my-5`}>Instant Quote</h1>
 				<p className=''>We offer fast, easy, and instant quotes.</p>
 				<p className='text-sm'>If you&apos;d like to learn more, fill out the information below to receive an instant quote via email.</p>
-				<p className='text-sm font-light'>Hate spam? Don&apos;t worry, we do too. We&apos;ll never send you unscolicited mail</p>
+				<p className='text-sm font-light'>Hate spam? Don&apos;t worry, we do too. We&apos;ll never send you unsolicited mail</p>
 			</div>
 			<div className="flex flex-col lg:flex-row justify-center lg:space-x-20 mt-10 items-center w-full relative">
 				<img src={props.imagePath} alt="" className='shadow-lg hidden lg:block h-[500px] w-[375px] object-cover lg:rounded-[2.5rem] ' />
