@@ -44,11 +44,11 @@ const VideoHero = (props: VideoHeroProps) => {
 				<source src={props.path} />
 			</video>
 			<div className="overlay" />
-			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center h-1/2">
-				<p className={`${scriptFont.className} md:text-6xl font-bold text-white mb-5`}>{props.heading}</p>
-				<p className="text-xl text-white">{props.subtitle}</p>
-				<div className="flex w-full  items-center justify-center">
-					<div className="flex flex-col w-1/2  space-y-3">
+			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center h-1/2 w-3/4 lg:px-10 ">
+				<p className={`${scriptFont.className} text-4xl md:text-6xl font-bold text-white mb-5`}>{props.heading}</p>
+				<p className="text-xl text-white pt-3">{props.subtitle}</p>
+				<div className="flex w-full  items-center justify-center mt-5">
+					<div className="flex flex-col md:w-1/2  space-y-3">
 						{props.button && (
 							<button className="btn ">
 								<Link href={props.button.path}>
