@@ -1,0 +1,23 @@
+[
+	{
+		"id": 1,
+		"name": "Digital Booth",
+		"description": "With its sleek design, the digital booth packs a truly modern photo booth experience into a tiny footprint. The digital booth can take GIFs, boomerangs, and videos which guests can send to themselves imediately after",
+		"imagePath": "/images/eventImages/selfieBooth01.jpg",
+		"linkPath": "/booths/digital-photo-booth"
+	},
+	{
+		"id": 2,
+		"name": "Premium Photo Booth",
+		"description": "Our open-air photo booth provides everything you need to have the most powerful tower photo booth rental experience possible. Our Premium Photo Booth allows guests to take their images with a high quality DSLR camera, and print the photo strips on demand",
+		"imagePath": "/images/eventImages/premiumBooth01.jpg",
+		"linkPath": "/booths/premium-photo-booth"
+	},
+	{
+		"id": 3,
+		"name": "Magic Mirror Booth",
+		"description": "Our Magic Mirror photo booth takes fun to another level with colorful animations and voice guidance. Participants engage in an interactive experience to create their photo keepsake. Most importantly, every Magic Mirror rental package is all-inclusive, so you can enjoy the event",
+		"imagePath": "/images/eventImages/mirrorBooth01.png",
+		"linkPath": "/booths/magic-mirror-photo-booth"
+	}
+]

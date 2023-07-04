@@ -16,7 +16,7 @@ const Events = () => {
 				Photogram Booth caters to a wide array of events, including parties, weddings, and corporate gatherings. Our photo booths add a touch of enchantment to each occasion, capturing cherished moments and creating lasting memories. With customizable features and professional service, we ensure that every event, be it a lively celebration or a corporate affair, becomes an unforgettable experience for all.
 			</p>
 
-			<div className="flex flex-col lg:flex-row lg:space-x-10 mt-5  ">
+			<div className="flex flex-col lg:flex-row lg:space-x-10 mt-5 max-w-[90vw] ">
 
 				{eventsData.map(el => (
 					<div key={el.id} className="w-[90vw] lg:w-96 h-[550px] rounded-[2.5rem] relative overflow-hidden mt-5">

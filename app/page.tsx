@@ -21,7 +21,7 @@ export default function Home() {
 			<ServicesDescription />
 			<BoothServices />
 			<Events />
-			{/* <RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/> */}
+			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg'/>
 			<ServiceLocations />
 
 		</main>

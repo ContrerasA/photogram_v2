@@ -77,9 +77,25 @@ const Navbar = () => {
 							</ul>
 						</details>
 					</li>
-					<li><Link href="/events/weddings">Weddings</Link></li>
-					<li><Link href="/events/parties">Parties</Link></li>
-					<li><Link href="/events/corporate-events">Corporate Events</Link></li>
+					<li tabIndex={1}>
+						<details>
+							<summary>Booth Packages</summary>
+							<ul className="p-2 z-50">
+								<li className=' z-50'>
+									<li><Link href="/events/weddings">Weddings</Link></li>
+								</li>
+								<li className=' z-50'>
+									<li><Link href="/events/parties">Parties</Link></li>
+								</li>
+								<li className=' z-50'>
+									<li><Link href="/events/corporate-events">Corporate Events</Link></li>
+								</li>
+							</ul>
+						</details>
+					</li>
+
+
+
 					<li><Link href="/gallery">Gallery</Link></li>
 					<li><Link href="/photo-templates">Photo Templates</Link></li>
 					<li><Link href="/backdrops">Backdrops</Link></li>
