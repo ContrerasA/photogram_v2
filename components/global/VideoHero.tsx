@@ -2,7 +2,7 @@
 
 import { scriptFont } from '@/src/utils/fontUtils'
 import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactPlayer from 'react-player';
 
 export type ButtonInformation = {
@@ -23,20 +23,26 @@ interface WindowSize {
 }
 
 const VideoHero = (props: VideoHeroProps) => {
-	const [windowSize, setWindowSize] = useState<WindowSize>({
-		height: 1000
-	})
+	const [res, setRes] = useState("");
 
 	useEffect(() => {
-		setWindowSize({ height: window.innerHeight })
+		const video = document.querySelector('video');
+		if (!video?.hasAttribute('autoplay')) {
+			console.log("didn't have muted")
+			video?.setAttribute("muted", "true");
+			setRes("wasn't muted")
+		} else {
+			console.log("already muted")
+			setRes("was muted")
+		}
+	})
 
-	}, [])
 
 	return (
 		<div className={`relative`}>
-
-			<video   src={props.path} autoPlay muted loop className={`h-[750px] lg:h-[1000px] object-cover`}></video>
-			
+			<video autoPlay={true} playsInline={true} loop={true} muted={true} className={`h-[750px] lg:h-[1000px] w-screen object-cover`}>
+				<source src={props.path} />
+			</video>
 			<div className="overlay" />
 			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center h-1/2">
 				<p className={`${scriptFont.className} md:text-6xl font-bold text-white mb-5`}>{props.heading}</p>
