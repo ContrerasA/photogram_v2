@@ -1,6 +1,9 @@
+'use client';
+
 import { scriptFont } from '@/src/utils/fontUtils'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import ReactPlayer from 'react-player';
 
 export type ButtonInformation = {
 	text: string,
@@ -14,22 +17,36 @@ export type VideoHeroProps = {
 	button?: ButtonInformation
 }
 
+interface WindowSize {
+	height?: number,
+	width?: number
+}
+
 const VideoHero = (props: VideoHeroProps) => {
+	const [windowSize, setWindowSize] = useState<WindowSize>({
+		height: 1000
+	})
+
+	useEffect(() => {
+		setWindowSize({ height: window.innerHeight })
+
+	}, [])
+
 	return (
-		<div className='relative h-screen '>
-			<video className=' h-full w-full object-cover' muted autoPlay loop>
-				<source src={props.path} />
-			</video>
+		<div className={`relative`}>
+
+			<video   src={props.path} autoPlay muted loop className={`h-[750px] lg:h-[1000px] object-cover`}></video>
+			
 			<div className="overlay" />
-			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-				<p className={`${scriptFont.className} text-6xl font-bold text-white mb-5`}>{props.heading}</p>
+			<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center h-1/2">
+				<p className={`${scriptFont.className} md:text-6xl font-bold text-white mb-5`}>{props.heading}</p>
 				<p className="text-xl text-white">{props.subtitle}</p>
-				<div className="flex w-full h-full items-center justify-center">
-					<div className="flex flex-col w-1/2 m-3 space-y-3">
+				<div className="flex w-full  items-center justify-center">
+					<div className="flex flex-col w-1/2  space-y-3">
 						{props.button && (
 							<button className="btn ">
 								<Link href={props.button.path}>
-								{props.button.text}
+									{props.button.text}
 								</Link>
 							</button>
 						)}

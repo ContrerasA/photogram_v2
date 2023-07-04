@@ -46,14 +46,14 @@ const Events = ({ params }: any) => {
 
 	return (
 		<div>
-			<VideoHero
+			{/* <VideoHero
 				path={data.videoHero.path}
 				heading={data.videoHero.heading}
 				subtitle={data.videoHero.subtitle}
 				button={{ text: data.videoHero.button.text, path: data.videoHero.button.path }}
-			/>
+			/> */}
 
-			<div className='flex flex-col lg:flex-row mt-20 justify-center lg:space-x-40 max-w-[90vw] mx-auto space-y-10 lg:space-y-0'>
+			<div className='flex flex-col lg:flex-row mt-20 justify-center lg:space-x-40  mx-auto space-y-10 lg:space-y-0'>
 				{data.about.map((el, index) => (
 					<div key={index} className='w-full lg:w-1/3 flex flex-col items-center text-center h-full '>
 						<img src={el.iconPath} alt="" width={96} className='flex-grow mb-5' />
@@ -67,17 +67,17 @@ const Events = ({ params }: any) => {
 			{/* Events Promo Image */}
 			<div className='relative'>
 				<div className='absolute h-[255px] z-20'>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none" className='h-[100px] w-full' >
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 131.1" preserveAspectRatio="none" className='h-[50px] lg:h-[100px] w-screen' >
 						<path fill="rgba(255, 255, 255, 1)" d="M0 0L2600 0 2600 69.1 0 0z"></path>
 						<path fill="rgba(255, 255, 255, 1)" style={{ opacity: 0.75 }} d="M0 0L2600 0 2600 69.1 0 69.1z"></path>
 						<path fill="rgba(255, 255, 255, 1)" style={{ opacity: 0.50 }} d="M2600 0L0 0 0 130.1 2600 69.1z"></path>
 					</svg>
 				</div>
-				<img src={data.reviewImagePath} alt="" className='w-screen ' />
+				<img src={data.reviewImagePath} alt="" className='w-screen min-h-[500px] object-cover' />
 				<div className="overlay" />
 				{data.review && (
 					<div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-xl w-3/4'>
-						<p className='text-white mb-3'>{data.review.review}</p>
+						<p className='text-white mb-3 text-sm lg:text-base'>{data.review.review}</p>
 						<p className={`${scriptFont.className} text-3xl mb-5 text-white text-right`}>- {data.review.name}</p>
 					</div>
 				)}
@@ -85,8 +85,8 @@ const Events = ({ params }: any) => {
 
 			{/* Features */}
 			<BoothFeatures booth='premiumBooth' />
-			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
 			<BoothServices />
+			<RequestQuote imagePath='/images/eventImages/premiumBooth01.jpg' />
 
 		</div>
 	)

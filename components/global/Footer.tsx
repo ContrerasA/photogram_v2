@@ -5,7 +5,9 @@ import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<section className='bg-gray-100 mt-20 pt-20 pb-40'>
+		<div className='bg-gray-100 mt-20 pt-20 pb-40'>
+			<section>
+
 			<div className='flex flex-col lg:flex-row justify-center items-center lg:items-start text-lg lg:text-base space-y-10 lg:space-y-0'>
 				<div className='lg:w-1/6 w-1/2 text-center flex flex-col lg:mx-20'>
 					<p className={`${scriptFont.className} text-2xl mb-2`}>About us</p>
@@ -43,8 +45,10 @@ const Footer = () => {
 				</div>
 
 
-			</div>
-		</section>
+				</div>
+			</section>
+				
+		</div>
 	)
 }
 

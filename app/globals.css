@@ -13,3 +13,7 @@
 .label {
 	@apply block text-gray-700 text-sm font-normal mb-2;
 }
+
+section {
+	@apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8 my-20 sm:my-24 lg:my-24
+}

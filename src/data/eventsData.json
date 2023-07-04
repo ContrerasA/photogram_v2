@@ -1,0 +1,5 @@
+[
+	{"id": 1, "name": "Parties", "imagePath": "/images/eventImages/party01.jpeg", "buttonPath": "/events/parties"},
+	{"id": 2, "name": "Weddings", "imagePath": "/images/eventImages/wedding01.jpeg", "buttonPath": "/events/weddings"},
+	{"id": 3, "name": "Corporate Events", "imagePath": "/images/eventImages/corporate01.jpeg", "buttonPath": "/events/corporate-events"}
+]

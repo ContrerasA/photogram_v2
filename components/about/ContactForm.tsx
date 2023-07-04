@@ -40,7 +40,6 @@ const ContactForm = () => {
 			<p className="text-lg text-center">You may also reach us by phone <a href="tel:408-703-5994" className="text-blue-400">(408) 703-5994</a></p>
 			<p className="text-md text-center">Response typically with 12 hours</p>
 
-
 			<div className="flex items-center justify-center relative my-10">
 				<div className="w-full max-w-2xl">
 					<form onSubmit={handleSubmit(onSubmit)}>
