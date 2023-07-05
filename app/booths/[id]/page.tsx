@@ -5,6 +5,7 @@ import VideoHero from '@/components/global/VideoHero';
 import { scriptFont } from '@/src/utils/fontUtils';
 import BoothFeatures from '@/components/booths/boothFeatures';
 import RequestQuote from '@/components/global/RequestQuote';
+import ThreeBooth from '@/components/three/ThreeBooth';
 
 interface BoothData {
 	id: string
@@ -45,6 +46,11 @@ const Page = async ({ params }: any) => {
 				subtitle={data.videoHero.subtitle}
 				path={data.videoHero.path}
 			/>
+
+			<section>
+				<ThreeBooth booth={params.id} />
+			</section>
+
 			<section>
 				<div className="flex flex-col mt-10 w-full items-center">
 					{data.marketingInfo.map((el, index) => (

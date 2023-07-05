@@ -23,17 +23,11 @@ interface WindowSize {
 }
 
 const VideoHero = (props: VideoHeroProps) => {
-	const [res, setRes] = useState("");
 
 	useEffect(() => {
 		const video = document.querySelector('video');
 		if (!video?.hasAttribute('autoplay')) {
-			console.log("didn't have muted")
 			video?.setAttribute("muted", "true");
-			setRes("wasn't muted")
-		} else {
-			console.log("already muted")
-			setRes("was muted")
 		}
 	})
 

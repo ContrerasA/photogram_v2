@@ -1,0 +1,8 @@
+[
+	{"id": 1, "booth": "premium-photo-booth", "position": [0.75, 8.54, 6.35],"name": "Photo Booth", "description": "Our Premium Photo Booth"},
+	{"id": 2, "booth": "premium-photo-booth", "position": [-4.37, 6.86, 7.67],"name": "High Quality Camera", "description": "We use a high quality DSLR camera to capture your event's most memorable moments"},
+	{"id": 3, "booth": "premium-photo-booth", "position": [0.9, 5.72, 3.99],"name": "Sublimation Printer", "description": "Our high quality sublimaiton printer means you receive your prints in as little as 15 seconds"},
+	{"id": 4, "booth": "premium-photo-booth", "position": [3.76, -3.14, 7.02],"name": "Backdrop", "description": "We have a wide selection of backdrops available"},
+	{"id": 5, "booth": "premium-photo-booth", "position": [-5.18, 6.66, 2.70],"name": "Table", "description": "We also bring a table"},
+	{"id": 6, "booth": "premium-photo-booth", "position": [-5.20, 2.98, 3.53],"name": "Props", "description": "A wide variety of props for your guest to pose and create memories with"}
+]

@@ -11,6 +11,7 @@ import RequestQuote from '@/components/global/RequestQuote'
 const scriptFont = Nothing_You_Could_Do({ subsets: ['latin'], weight: '400' })
 
 import eventsMarketingData from '@/src/data/eventsMarketingData.json';
+import Booth from '@/components/three/ThreeBooth'
 
 interface EventData {
 	id: number,
@@ -64,6 +65,8 @@ const Events = ({ params }: any) => {
 					))}
 				</div>
 			</section>
+
+
 
 
 			{/* Events Promo Image */}
