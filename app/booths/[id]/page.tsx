@@ -47,9 +47,6 @@ const Page = async ({ params }: any) => {
 				path={data.videoHero.path}
 			/>
 
-			<section>
-				<ThreeBooth booth={params.id} />
-			</section>
 
 			<section>
 				<div className="flex flex-col mt-10 w-full items-center">
@@ -63,6 +60,9 @@ const Page = async ({ params }: any) => {
 						</div>
 					))}
 				</div>
+
+				<ThreeBooth booth={params.id} />
+
 
 				<BoothFeatures
 					booth={data.boothFeatures.booth}

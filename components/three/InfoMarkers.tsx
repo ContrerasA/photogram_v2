@@ -19,7 +19,8 @@ const InfoMarkers = (props: InfoMarkersProps) => {
 	function refresh() {
 		if (htmlRef && htmlRef.current) {
 			if (parentEl == null) {
-				parentEl = htmlRef!.current!.parentNode;
+				// @ts-ignore
+				parentEl = htmlRef.current.parentNode;
 			}
 
 			if (!active) {
@@ -36,13 +37,16 @@ const InfoMarkers = (props: InfoMarkersProps) => {
 
 
 	return (
-		// <Html className='select-none' position={props.position} zIndexRange={active ? [2000000000, 2000000000]: [16777271, 0]} >
-		<Html ref={htmlRef} position={props.position} occlude  >
-			<AiOutlineInfoCircle
-				onMouseOver={() => setActive(true)}
-				onMouseOut={() => setActive(false)}
+		// @ts-ignore
+		<Html ref={htmlRef} position={props.position}  className='select-none cursor-pointer'  >
 
-			/>
+				<AiOutlineInfoCircle
+					onMouseOver={() => setActive(true)}
+				onMouseOut={() => setActive(false)}
+				className='bg-white bg-opacity-75 rounded-full p-[0.125rem]'
+					size={20}
+				/>
+
 			{
 				active && (
 					<div className='bg-slate-50 w-64 p-2 rounded-xl z-50'>
