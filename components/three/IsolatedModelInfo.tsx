@@ -1,7 +1,7 @@
 import { CameraControls, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import { folder, useControls } from "leva";
-import { Suspense, useEffect, useRef } from "react";
+import { Ref, Suspense, useEffect, useRef } from "react";
 import { Mesh, Vector3 } from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
@@ -30,7 +30,7 @@ function Scene(props: any) {
 }
 
 export function IsolatedModelInfoCard(props: any) {
-	const canvasRef = useRef();
+	const canvasRef = useRef() as Ref<HTMLCanvasElement>;
 	const cameraControlRef = useRef();
 
 	// const controls = useControls(

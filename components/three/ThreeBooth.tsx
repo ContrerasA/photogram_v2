@@ -19,7 +19,7 @@ import { IsolatedModelInfoCard } from './IsolatedModelInfo';
 
 interface ThreeBoothProps {
 	booth: string
-	setActiveInfoMarker: any
+	setActiveInfoMarker?: any
 }
 
 function applyTexture(object: THREE.Object3D, texture: THREE.Texture) {

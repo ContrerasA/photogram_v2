@@ -12,7 +12,7 @@
 	{"id": 11, "city": "Daily City", "state": "CA", "addedCost": 0},
 	{"id": 12, "city": "Danville", "state": "CA", "addedCost": 0},
 	{"id": 13, "city": "Dublin", "state": "CA", "addedCost": 0},
-	{"id": 14, "city": "East Palo Alto", "state": "CA", "addedCost": 0},
+	{"id": 14, "city": "East Palo Alto", "state": "CA", "addedCost": 10000},
 	{"id": 15, "city": "Emeryville", "state": "CA", "addedCost": 0},
 	{"id": 16, "city": "Foster City", "state": "CA", "addedCost": 0},
 	{"id": 17, "city": "Fremont", "state": "CA", "addedCost": 0},
