@@ -95,7 +95,6 @@ function MainScene(props: ThreeBoothProps) {
 		}
 
 	);
-	console.log('test')
 
 	useEffect(() => {
 		toggleFlashlight()
