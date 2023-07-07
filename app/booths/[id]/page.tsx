@@ -6,6 +6,7 @@ import { scriptFont } from '@/src/utils/fontUtils';
 import BoothFeatures from '@/components/booths/boothFeatures';
 import RequestQuote from '@/components/global/RequestQuote';
 import ThreeBooth from '@/components/three/ThreeBooth';
+import { Leva } from 'leva';
 
 interface BoothData {
 	id: string

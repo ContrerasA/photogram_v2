@@ -4,7 +4,7 @@ import { Canvas, useLoader } from '@react-three/fiber'
 import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { MeshStandardMaterial, TextureLoader } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-import { folder, useControls } from 'leva'
+import { Leva, folder, useControls } from 'leva'
 import { AiOutlineInfoCircle } from 'react-icons/ai'
 import { InfoMarker } from './InfoMarkers';
 import threeBoothData from "@/src/data/three/threeBoothData.json"
@@ -173,6 +173,8 @@ const ThreeBooth = (props: ThreeBoothProps) => {
 
 	return (
 		<section className='flex h-[650px]  space-x-14 '>
+			<Leva hidden={process.env.NODE_ENV == "production" ? true : false} />
+
 			<div className='w-1/2 h-full bg-white px-6 pt-6 shadow-lg shadow-slate-900 p-5 rounded-lg relative rotate-2'>
 				<div className='h-5/6 bg-slate-200 relative select-none'
 					onMouseDown={handleInteraction}
