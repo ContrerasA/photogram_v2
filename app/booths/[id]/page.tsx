@@ -62,18 +62,20 @@ const Page = async ({ params }: any) => {
 					))}
 				</div>
 
-				<ThreeBooth booth={params.id} />
-
-
-				<BoothFeatures
-					booth={data.boothFeatures.booth}
-					includedFeaturesDescription={data.boothFeatures.includedFeaturesDescription}
-				/>
-
-				<RequestQuote imagePath={data.quoteImagePath} />
-
-
 			</section>
+			<div className='hidden md:block'>
+				<ThreeBooth booth={params.id} />
+			</div>
+
+
+			<BoothFeatures
+				booth={data.boothFeatures.booth}
+				includedFeaturesDescription={data.boothFeatures.includedFeaturesDescription}
+			/>
+
+			<RequestQuote imagePath={data.quoteImagePath} />
+
+
 		</>
 
 	)
