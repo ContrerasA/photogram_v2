@@ -41,7 +41,7 @@ export function IsolatedModelInfoCard(props: any) {
 	return (
 		<Canvas
 			className=' rounded-2xl'
-			style={{ backgroundImage: "url('/three/seamlessCameraPattern.png')" }}
+			style={{ backgroundImage: "url('/three/seamlessCameraPattern02.png')" }}
 			ref={canvasRef}
 			onMouseDown={(e) => e.preventDefault()}
 
