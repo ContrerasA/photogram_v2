@@ -10,5 +10,3 @@ const pool = new Pool({
 });
 
 export const db = drizzle(pool);
-
-// const allUsers = await db.select().from(quotes);
