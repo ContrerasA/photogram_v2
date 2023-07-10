@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server'
 import fs from 'fs'
 import Handlebars from 'handlebars'
 import { db } from '@/src/db/config'
-import { NewQuote, Quote, quotes } from '@/src/db/schema/quotes'
+import { Quote, quotes } from '@/src/db/schema/quotes'
 import { nanoid } from 'nanoid'
 
 const mailgun = new Mailgun(FormData)
@@ -21,30 +21,11 @@ async function generateTemplate(data : any) {
 	return outputString;
 }
 
-export async function GET(req: Request) {
-	const res = await db.select().from(quotes);
-
-	const newQuote : Quote = {
-		id: nanoid(6).toUpperCase(),
-		name: 'Bryana',
-		email: 'BryanaMestas@gmail.com',
-		eventDate: new Date('July 14, 2024').toDateString(),
-		eventLocation: 'San Jose',
-		eventOccasion: 'Wedding'
-	}
-
-	const insertRes = await db.insert(quotes).values(newQuote).returning();
-
-		
-	return NextResponse.json(insertRes[0])
-	
-}
-
 export async function POST(req: Request) {
 	const data = await req.json();
 
 	const newQuote: Quote = {
-		id: nanoid(12).toUpperCase(),
+		id: nanoid(6).toUpperCase(),
 		name: data.name,
 		email: data.email,
 		eventDate: data.eventDate,
