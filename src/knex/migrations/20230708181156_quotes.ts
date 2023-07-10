@@ -18,6 +18,7 @@ exports.up = function (knex: Knex): Promise<any> {
 			table.text("eventOccasion");
 			table.date("eventDate");
 			table.text("eventLocation");
+			table.date("createdOn").defaultTo(knex.fn.now());
 		})
 	])
 };

@@ -32,7 +32,7 @@ const RequestQuote = (props: PropTypes) => {
 		setContactState('submitting');
 		data.date = format(new Date(), 'MMMM d, yyy @ h:m:aaa')
 		data.eventDate = format(new Date(data.eventDate), 'MMMM d, yyy')
-		let res = await axios.post(`/api/request-quote`, data)
+		let res = await axios.post(`/api/quote`, data)
 
 		setTimeout(() => {
 			setContactState('complete');
