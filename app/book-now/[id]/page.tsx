@@ -26,40 +26,9 @@ export default async function ({ params: { id } }: { params: { id: string } }) {
 		<>
 
 			<section>
-				<p className={`${scriptFont.className} text-5xl`}> Book Now!</p>
-				<p className='mb-2'>Do we have your information correct?</p>
-				<div className="flex flex-col w-1/4">
-					<div className='flex'>
-						<p className='basis-1/2'>Name:</p>
-						<p className='basis-1/2'>{quote.name}</p>
-					</div>
-					<hr />
-					<div className='flex'>
-						<p className='basis-1/2'>Email: </p>
-						<p className='basis-1/2'>{quote.email}</p>
-					</div>
-					<hr />
-					<div className='flex'>
-						<p className='basis-1/2'>Event Date: </p>
-						<p className='basis-1/2'>{format(new Date(quote.eventDate as string), 'MMM d, yyy')}</p>
-					</div>
-					<hr />
-					<div className='flex'>
-						<p className='basis-1/2'>Event Occasion: </p>
-						<p className='basis-1/2'>{quote.eventOccasion}</p>
-					</div>
-					<hr />
-					<div className='flex'>
-						<p className='basis-1/2'>Event Location: </p>
-						<p className='basis-1/2'>{quote.eventLocation}</p>
-					</div>
-					<hr />
-
-				</div>
-			</section>
-
-			<section>
-				<BookNowForm quoteID={quote.id} />
+				<p className={`${scriptFont.className} text-5xl mb-5`}> Book Now!</p>
+				
+				<BookNowForm quote={quote} />
 			</section>
 
 		</>
