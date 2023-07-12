@@ -44,17 +44,17 @@ const VideoHero = (props: VideoHeroProps) => {
 				<div className="flex w-full  items-center justify-center mt-5">
 					<div className="flex flex-col md:w-1/2  space-y-3 items-center">
 						{props.button && (
-							<button className="btn  w-64">
-								<Link href={props.button.path}>
+							<Link href={props.button.path}>
+								<button className="btn  w-64">
 									{props.button.text}
-								</Link>
-							</button>
-						)}
-						<button className="btn btn-primary w-64">
-							<Link href="#request-quote">
-								Instant Quote
+								</button>
 							</Link>
-						</button>
+						)}
+						<Link href="#request-quote">
+							<button className="btn btn-primary w-64">
+								Instant Quote
+							</button>
+						</Link>
 					</div>
 				</div>
 			</div>
