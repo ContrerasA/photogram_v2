@@ -6,7 +6,7 @@ import React from 'react'
 const BookingThankYou = () => {
 	return (
 		<>
-			<Script>
+			<Script id='ga-conversion-tracking'>
 				{`
 				  gtag('event', 'conversion', {
 						'send_to': 'AW-10801341731/hc16COaQ47oYEKPKvZ4o',
