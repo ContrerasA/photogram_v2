@@ -5,11 +5,15 @@ import ReactCanvasConfetti from 'react-canvas-confetti';
 const Confetti = () => {
 	const refAnimationInstance = useRef(null);
 
+	// @ts-ignore
 	const getInstance = useCallback(instance => {
 		refAnimationInstance.current = instance;
 	}, []);
-
+	
+	// @ts-ignore
 	const makeShot = useCallback((particleRatio, opts) => {
+		
+		// @ts-ignore
 		refAnimationInstance.current && refAnimationInstance.current({
 			...opts,
 			origin: { y: 0.7 },
