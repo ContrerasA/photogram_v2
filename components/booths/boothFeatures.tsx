@@ -11,9 +11,9 @@ interface PropsType {
 
 const BoothFeatures = (props: PropsType) => {
 
-	const requestedBoothFeatures = boothFeatures.filter(el => el.booth.includes(props.booth));
-	const includedFeatures = requestedBoothFeatures.filter(el => el.type === 'included')
-	const OptionalFeatures = requestedBoothFeatures.filter(el => el.type === 'optional')
+	const requestedBoothFeatures = boothFeatures.filter(el => el.applicableBooths.includes(props.booth));
+	const includedFeatures = requestedBoothFeatures.filter(el => el.featureType === 'included')
+	const OptionalFeatures = requestedBoothFeatures.filter(el => el.featureType === 'optional')
 
 	return (
 		<section>
