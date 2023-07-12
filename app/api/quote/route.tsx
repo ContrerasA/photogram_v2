@@ -25,7 +25,7 @@ export async function POST(req: Request) {
 	const data = await req.json();
 
 	const newQuote: Quote = {
-		id: nanoid(6).toUpperCase(),
+		id: nanoid(16).toUpperCase(),
 		name: data.name,
 		email: data.email,
 		eventDate: data.eventDate,
