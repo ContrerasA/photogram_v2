@@ -1,10 +1,10 @@
 [
 	{"id": 1, "path": "/images/backdrops/Barndoor_rjpxiv.jpg", "name": "Barn Door", "type": "standard"},
-	{"id": 2, "path": "/images/backdrops/BlackArtDecoBackdrop_nbdnqv.jpg", "name": "Black", "type": "standard"},
+	{"id": 2, "path": "/images/backdrops/BlackArtDecoBackdrop_nbdnqv.jpg", "name": "Black Art Deco", "type": "standard"},
 	{"id": 3, "path": "/images/backdrops/whitefloral_osrnmc.jpg", "name": "White Floral", "type": "standard"},
 	{"id": 4, "path": "/images/backdrops/wood_plank_wall_uyowia.jpg", "name": "Wooden Planks", "type": "standard"},
 	{"id": 5, "path": "/images/backdrops/gold_leaves_okgyku.jpg", "name": "Gold Leaves", "type": "standard"},
-	{"id": 6, "path": "/images/backdrops/blackbackdrop_zplnt5.jpg", "name": "Black Art Deco", "type": "standard"},
+	{"id": 6, "path": "/images/backdrops/blackbackdrop_zplnt5.jpg", "name": "Black", "type": "standard"},
 	{"id": 7, "path": "/images/backdrops/whiteswirls_ualhwz.jpg", "name": "White Swirls", "type": "standard"},
 	{"id": 8, "path": "/images/backdrops/Gold-Bokeh-Backdrop_ck3wqr.png", "name": "Gold Bokeh", "type": "standard"},
 	{"id": 9, "path": "/images/backdrops/blackglitterbackdrop_jva0hd.jpg", "name": "Black Glitter", "type": "standard"},
