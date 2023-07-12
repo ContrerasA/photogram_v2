@@ -81,6 +81,7 @@ const BookNowForm = ({ quote }: { quote: Quote }) => {
 
 	async function onSubmit(data: any) {
 		data.date = format(new Date(), 'MMMM d, yyy, @ h:m aaa');
+		data.quoteID = quote.id;
 		let res = await axios.post('/api/book', data)
 	}
 
