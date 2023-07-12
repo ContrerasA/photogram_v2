@@ -13,7 +13,7 @@ const mg = mailgun.client({
 	key: process.env.MG_API_KEY!,
 })
 
-async function generateTemplate(data : any) {
+async function generateTemplate(data: any) {
 	let stream = fs.readFileSync('./src/emailTemplates/quote01.html')
 	let source = stream.toString();
 	let template = Handlebars.compile(source);
@@ -32,7 +32,7 @@ export async function POST(req: Request) {
 		eventLocation: data.eventLocation,
 		eventOccasion: data.eventOccasion,
 		createdOn: data.date
-	}	
+	}
 
 	const insertRes = await db.insert(quotes).values(newQuote).returning();
 	const res = insertRes[0];
@@ -48,16 +48,12 @@ export async function POST(req: Request) {
 		html: emailTemplate
 	}
 
-	return NextResponse.json(res)
+	let emailRes = await mg.messages.create(process.env.MG_DOMAIN!, messageParams)
 
-	// let emailRes = await mg.messages.create(process.env.MG_DOMAIN!, messageParams)
-
-	// if (emailRes.status == 200) {
-	// 	console.log(`New quote sent: ${data.date}: ${data.name}`);
-	// 	return NextResponse.json({ status: 'success' })
-	// } else {
-	// 	return NextResponse.json({ status: 'error' })
-	// }
-
-
+	if (emailRes.status == 200) {
+		console.log(`New quote sent: ${data.date}: ${data.name}`);
+		return NextResponse.json({ status: 'success' })
+	} else {
+		return NextResponse.json({ status: 'error' })
+	}
 }
