@@ -70,6 +70,15 @@ const RequestQuote = (props: PropTypes) => {
 					</div>
 
 					<div className="mb-4">
+						<label htmlFor="eventOccasion" className='label'>Event Occasion</label>
+						<select id='eventOccasion' required {...register("eventOccasion")} className='input-field'>
+							{eventOccasions.map((el, index) => (
+								<option key={index} value={el}>{el}</option>
+							))}
+						</select>
+					</div>
+					
+					<div className="mb-4">
 						<label htmlFor="eventLocation" className='label'>Event Location</label>
 						<select id="eventLocation" required {...register("eventLocation")} className='input-field'>
 							{serviceLocations.map((el, index) => (
@@ -78,14 +87,6 @@ const RequestQuote = (props: PropTypes) => {
 						</select>
 					</div>
 
-					<div className="mb-4">
-						<label htmlFor="eventOccasion" className='label'>Event Occasion</label>
-						<select id='eventOccasion' required {...register("eventOccasion")} className='input-field'>
-							{eventOccasions.map((el, index) => (
-								<option key={index} value={el}>{el}</option>
-							))}
-						</select>
-					</div>
 
 					<div className="mt-5 flex justify-center">
 						<input type="submit" className="btn btn-primary" />
